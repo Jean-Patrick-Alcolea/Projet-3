@@ -2,6 +2,7 @@ import streamlit as st
 from streamlit_cookies_controller import CookieController
 import pandas as pd
 import requests
+import pendulum
 
 cookie_manager = CookieController()
 ville_cookie = cookie_manager.get("ville")
@@ -63,10 +64,98 @@ for day in data["forecast"]["forecastday"]:
             "daily_will_it_snow": day["day"]["daily_will_it_snow"],
             "daily_chance_of_snow": day["day"]["daily_chance_of_snow"],
             "condition_text": day["day"]["condition"]["text"],
-            "condition_icon": day["day"]["condition"]["icon"],
+            "condition_icon": "https:" + day["day"]["condition"]["icon"],
         }
     )
 df_meteo = pd.DataFrame(data_2)
 df_meteo["date"] = pd.to_datetime(df_meteo["date"])
+df_meteo["jour_fr"] = (
+    df_meteo["date"]
+    .apply(lambda d: pendulum.instance(d).format("dddd", locale="fr"))
+    .str.title()
+)
 st.dataframe(df_meteo)
 st.dataframe(df)
+
+
+col1, col2, col3, col4 = st.columns(4)
+
+
+with col2:
+    st.write("")
+    st.write("")
+    st.html("""<h2 style='text-align: center; color: white' > Aujourd'hui </h2>""")
+
+with col3:
+    st.image(df_meteo["condition_icon"][0], width=150)
+
+
+col1, col2, col3, col4 = st.columns(4)
+
+with col1:
+    st.metric("Temperature max", f"{df_meteo["max_temp"][0]} °C")
+with col2:
+    st.metric("Temperature min", f"{df_meteo["min_temp"][0]} °C")
+with col3:
+    st.metric(f"""Risque de pluie""", f"""{df_meteo["daily_chance_of_rain"][0]} %""")
+with col4:
+    st.metric("Taux d'humidité", f"{df_meteo['avghumidity'][0]} %")
+
+col1, col2, col3 = st.columns(3)
+with col2:
+    if df_meteo["daily_chance_of_rain"][0] > 0:
+        st.metric("Précipitations", f"""{df_meteo["totalprecip_mm"][0]}mm""")
+with col3:
+    if df_meteo["daily_chance_of_snow"][0] > 0:
+        st.metric("Risque de neige", f"""{df_meteo["daily_chance_of_snow"][0]} %""")
+
+st.write("---")
+
+col1, col2, col3, col4 = st.columns(4)
+
+
+with col2:
+    st.write("")
+    st.write("")
+    st.html("""<h2 style='text-align: center; color: white' > Demain </h2>""")
+
+with col3:
+    st.image(df_meteo["condition_icon"][1], width=150)
+
+
+col1, col2, col3, col4 = st.columns(4)
+
+with col1:
+    st.metric("Temperature max", f"{df_meteo["max_temp"][1]} °C")
+with col2:
+    st.metric("Temperature min", f"{df_meteo["min_temp"][1]} °C")
+with col3:
+    st.metric(f"""Risque de pluie""", f"""{df_meteo["daily_chance_of_rain"][1]} %""")
+with col4:
+    st.metric("Taux d'humidité", f"{df_meteo['avghumidity'][1]} %")
+
+col1, col2, col3, col4 = st.columns(4)
+with col3:
+    if df_meteo["daily_chance_of_rain"][1] > 0:
+        st.metric("Précipitations", f"""{df_meteo["totalprecip_mm"][1]}mm""")
+with col4:
+    if df_meteo["daily_chance_of_snow"][1] > 0:
+        st.metric("Risque de neige", f"""{df_meteo["daily_chance_of_snow"][1]} %""")
+
+st.write("---")
+
+col1, col2, col3, col4 = st.columns(4)
+
+with col1:
+    st.html(
+        f"""<p style='text-align: center; color: white; font-size: 18px; margin-bottom: 0' > {df_meteo["jour_fr"][2]} </p>"""
+    )
+    st.html(
+        f"""<div style = "text-align : center;"> <img style = "height: 150px" src = "{df_meteo["condition_icon"][2]}" </div>"""
+    )
+    st.html(
+        f"""<p style='text-align: center; color: white' > <strong>{df_meteo['max_temp'][2]} °</strong>  <i> {df_meteo['min_temp'][2]} °</i></p>"""
+    )
+
+
+# col1, col2, col3, col4, col5, col6, col7, col8, col9, col10, col11, col12 = st.columns(12)
