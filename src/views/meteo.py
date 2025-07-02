@@ -3,6 +3,9 @@ from streamlit_cookies_controller import CookieController
 import pandas as pd
 import requests
 import pendulum
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.express as px
 
 cookie_manager = CookieController()
 ville_cookie = cookie_manager.get("ville")
@@ -30,7 +33,7 @@ data = response2.json()
 
 st.markdown(
     f"""
-    <h1 style='text-align: center; color: teal;'>
+    <h1 style='text-align: center; color: dodgerblue;'>
         Le point météo de {ville_cookie if ville_cookie else "ta ville"}
     </h1>
     """,
@@ -74,9 +77,29 @@ df_meteo["jour_fr"] = (
     .apply(lambda d: pendulum.instance(d).format("dddd", locale="fr"))
     .str.title()
 )
-st.dataframe(df_meteo)
-st.dataframe(df)
 
+st.markdown(
+    """
+<style>
+.encart {
+    background-color: #A70A0A;
+    padding-top: 1px;
+    padding-bottom: 0px;
+    border-radius: 5px;
+}
+</style>
+""",
+    unsafe_allow_html=True,
+)
+
+if df["alert"][0] != "No alert":
+    st.markdown(
+        f"""
+    <div class="encart">
+    <p style = 'text-align : center; font-size: 17px'> <strong> Alerte météo {df['alert_severity'][0]} </strong> : {df["alert"][0]} </p>
+    </div>""",
+        unsafe_allow_html=True,
+    )
 
 col1, col2, col3, col4 = st.columns(4)
 
@@ -101,8 +124,8 @@ with col3:
 with col4:
     st.metric("Taux d'humidité", f"{df_meteo['avghumidity'][0]} %")
 
-col1, col2, col3 = st.columns(3)
-with col2:
+col1, col2, col3, col4 = st.columns(4)
+with col3:
     if df_meteo["daily_chance_of_rain"][0] > 0:
         st.metric("Précipitations", f"""{df_meteo["totalprecip_mm"][0]}mm""")
 with col3:
@@ -146,16 +169,34 @@ st.write("---")
 
 col1, col2, col3, col4 = st.columns(4)
 
-with col1:
-    st.html(
-        f"""<p style='text-align: center; color: white; font-size: 18px; margin-bottom: 0' > {df_meteo["jour_fr"][2]} </p>"""
-    )
-    st.html(
-        f"""<div style = "text-align : center;"> <img style = "height: 150px" src = "{df_meteo["condition_icon"][2]}" </div>"""
-    )
-    st.html(
-        f"""<p style='text-align: center; color: white' > <strong>{df_meteo['max_temp'][2]} °</strong>  <i> {df_meteo['min_temp'][2]} °</i></p>"""
-    )
+list_col = [col1, col2, col3, col4]
+
+for i, col in enumerate(list_col):
+    with col:
+        st.html(
+            f"""<p style='text-align: center; color: white; font-size: 18px; margin-bottom: 0' > {df_meteo["jour_fr"][i+2]} </p>"""
+        )
+        st.html(
+            f"""<div style = "text-align : center;"> <img style = "height: 150px" src = "{df_meteo["condition_icon"][i+2]}" </div>"""
+        )
+        st.html(
+            f"""<p style='text-align: center; color: white' > <strong>{df_meteo['max_temp'][i+2]} °</strong>  <i> {df_meteo['min_temp'][i+2]} °</i></p>"""
+        )
 
 
-# col1, col2, col3, col4, col5, col6, col7, col8, col9, col10, col11, col12 = st.columns(12)
+##### Graphique précipitations
+
+# graphique avec plotly.express
+fig = px.area(
+    df_meteo,
+    x="jour_fr",
+    y="totalprecip_mm",
+    labels=False,
+    title="Prévisions des précipitations (en mm)",
+)
+fig.update_layout(xaxis_title=None, yaxis_title=None)
+fig.update_traces(
+    line_color="dodgerblue",
+    fillcolor="rgba(30, 144, 255, 0.4)",  # dodgerblue en semi-transparent
+)
+st.plotly_chart(fig)
