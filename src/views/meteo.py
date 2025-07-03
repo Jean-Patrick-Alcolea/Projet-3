@@ -82,7 +82,7 @@ st.markdown(
     """
 <style>
 .encart {
-    background-color: #A70A0A;
+    background-color: rgba(167, 10, 10, 0.4);
     padding-top: 1px;
     padding-bottom: 0px;
     border-radius: 5px;
@@ -100,18 +100,24 @@ if df["alert"][0] != "No alert":
     </div>""",
         unsafe_allow_html=True,
     )
-
+else:
+    st.markdown(
+        f"""
+    <div class="encart">
+    <p style = 'text-align : center; font-size: 17px'> <strong> Pas d'alerte météo </strong> </p>
+    </div>""",
+        unsafe_allow_html=True,
+    )
 col1, col2, col3, col4 = st.columns(4)
 
 
-with col2:
+with col3:
     st.write("")
     st.write("")
     st.html("""<h2 style='text-align: center; color: white;font-family: "Economica"' > Aujourd'hui </h2>""")
 
-with col3:
+with col2:
     st.image(df_meteo["condition_icon"][0], width=150)
-
 
 # Inclure la police Open Sans depuis Google Fonts et definir les metrics et titres
 st.markdown("""
@@ -135,8 +141,8 @@ st.markdown("""
     </style>
 """, unsafe_allow_html=True)
 
-# Création des 4 colonnes
-col1, col2, col3, col4 = st.columns(4)
+# Création des 5 colonnes
+col1, col2, col3, col4, col5= st.columns(5)
 
 # Affichage des éléments dans chaque colonne
 with col1:
@@ -148,38 +154,30 @@ with col2:
     st.markdown(f'<p class="metric-value">{df_meteo["min_temp"][0]} °C</p>', unsafe_allow_html=True)
 
 with col3:
-    st.markdown('<p class="metric-title">Taux d\'humidité</p>', unsafe_allow_html=True)
+    st.markdown('<p class="metric-title">Taux<br>d\'humidité</p>', unsafe_allow_html=True)
     st.markdown(f'<p class="metric-value">{df_meteo["avghumidity"][0]} %</p>', unsafe_allow_html=True)
 
 with col4:
-    st.markdown('<p class="metric-title">Risque de pluie</p>', unsafe_allow_html=True)
+    st.markdown('<p class="metric-title">Risque<br>de pluie</p>', unsafe_allow_html=True)
     st.markdown(f'<p class="metric-value">{df_meteo["daily_chance_of_rain"][0]} %</p>', unsafe_allow_html=True)
-
-col1, col2, col3, col4 = st.columns(4)
-with col4:
-    if df_meteo["daily_chance_of_rain"][0] > 0:
-        st.markdown('<p class="metric-title">Précipitations</p>', unsafe_allow_html=True)
-        st.markdown(f'<p class="metric-value">{df_meteo["totalprecip_mm"][0]} mm</p>', unsafe_allow_html=True)
-with col3:
-    if df_meteo["daily_chance_of_snow"][0] > 0:
-        st.markdown('<p class="metric-title">Risque de neige</p>', unsafe_allow_html=True)
-        st.markdown(f'<p class="metric-value">{df_meteo["daily_chance_of_snow"][0]} %</p>', unsafe_allow_html=True)
+with col5:
+    st.markdown('<p class="metric-title">Quantité <br>de pluie</p>', unsafe_allow_html=True)
+    st.markdown(f'<p class="metric-value">{df_meteo["totalprecip_mm"][0]} mm</p>', unsafe_allow_html=True)
 
 st.markdown("<hr style='border: 0.5px solid #57bb8a;'>", unsafe_allow_html=True)
 
 col1, col2, col3, col4 = st.columns(4)
 
-
-with col2:
+with col3:
     st.write("")
     st.write("")
     st.html("""<h2 style='text-align: center; color: white;font-family: "Economica"' > Demain </h2>""")
 
-with col3:
+with col2:
     st.image(df_meteo["condition_icon"][1], width=150)
 
-
-col1, col2, col3, col4 = st.columns(4)
+# Création des 5 colonnes
+col1, col2, col3, col4, col5= st.columns(5)
 
 # Affichage des éléments dans chaque colonne
 with col1:
@@ -191,37 +189,31 @@ with col2:
     st.markdown(f'<p class="metric-value">{df_meteo["min_temp"][1]} °C</p>', unsafe_allow_html=True)
 
 with col3:
-    st.markdown('<p class="metric-title">Taux d\'humidité</p>', unsafe_allow_html=True)
+    st.markdown('<p class="metric-title">Taux<br>d\'humidité</p>', unsafe_allow_html=True)
     st.markdown(f'<p class="metric-value">{df_meteo["avghumidity"][1]} %</p>', unsafe_allow_html=True)
 
 with col4:
-    st.markdown('<p class="metric-title">Risque de pluie</p>', unsafe_allow_html=True)
+    st.markdown('<p class="metric-title">Risque<br>de pluie</p>', unsafe_allow_html=True)
     st.markdown(f'<p class="metric-value">{df_meteo["daily_chance_of_rain"][1]} %</p>', unsafe_allow_html=True)
-
-col1, col2, col3, col4 = st.columns(4)
-with col4:
-    if df_meteo["daily_chance_of_rain"][1] > 0:
-        st.markdown('<p class="metric-title">Précipitations</p>', unsafe_allow_html=True)
-        st.markdown(f'<p class="metric-value">{df_meteo["totalprecip_mm"][1]} mm</p>', unsafe_allow_html=True)
-with col3:
-    if df_meteo["daily_chance_of_snow"][1] > 0:
-        st.markdown('<p class="metric-title">Risque de neige</p>', unsafe_allow_html=True)
-        st.markdown(f'<p class="metric-value">{df_meteo["daily_chance_of_snow"][1]} %</p>', unsafe_allow_html=True)
+with col5:
+    st.markdown('<p class="metric-title">Quantité <br>de pluie</p>', unsafe_allow_html=True)
+    st.markdown(f'<p class="metric-value">{df_meteo["totalprecip_mm"][1]} mm</p>', unsafe_allow_html=True)
 
 st.markdown("<hr style='border: 0.5px solid #57bb8a;'>", unsafe_allow_html=True)
 
 col1, col2, col3, col4 = st.columns(4)
 
-
-with col2:
+with col3:
     st.write("")
     st.write("")
     st.html(f"""<h2 style='text-align: center; color: white;font-family: "Economica"' > {df_meteo['jour_fr'][2]} </h2>""")
 
-with col3:
+with col2:
     st.image(df_meteo["condition_icon"][2], width=150)
 
-col1, col2, col3, col4 = st.columns(4)
+
+# Création des 5 colonnes
+col1, col2, col3, col4, col5= st.columns(5)
 
 # Affichage des éléments dans chaque colonne
 with col1:
@@ -233,22 +225,15 @@ with col2:
     st.markdown(f'<p class="metric-value">{df_meteo["min_temp"][2]} °C</p>', unsafe_allow_html=True)
 
 with col3:
-    st.markdown('<p class="metric-title">Taux d\'humidité</p>', unsafe_allow_html=True)
+    st.markdown('<p class="metric-title">Taux<br>d\'humidité</p>', unsafe_allow_html=True)
     st.markdown(f'<p class="metric-value">{df_meteo["avghumidity"][2]} %</p>', unsafe_allow_html=True)
 
 with col4:
-    st.markdown('<p class="metric-title">Risque de pluie</p>', unsafe_allow_html=True)
+    st.markdown('<p class="metric-title">Risque<br>de pluie</p>', unsafe_allow_html=True)
     st.markdown(f'<p class="metric-value">{df_meteo["daily_chance_of_rain"][2]} %</p>', unsafe_allow_html=True)
-
-col1, col2, col3, col4 = st.columns(4)
-with col4:
-    if df_meteo["daily_chance_of_rain"][2] > 0:
-        st.markdown('<p class="metric-title">Précipitations</p>', unsafe_allow_html=True)
-        st.markdown(f'<p class="metric-value">{df_meteo["totalprecip_mm"][2]} mm</p>', unsafe_allow_html=True)
-with col3:
-    if df_meteo["daily_chance_of_snow"][2] > 0:
-        st.markdown('<p class="metric-title">Risque de neige</p>', unsafe_allow_html=True)
-        st.markdown(f'<p class="metric-value">{df_meteo["daily_chance_of_snow"][2]} %</p>', unsafe_allow_html=True)
+with col5:
+    st.markdown('<p class="metric-title">Quantité <br>de pluie</p>', unsafe_allow_html=True)
+    st.markdown(f'<p class="metric-value">{df_meteo["totalprecip_mm"][2]} mm</p>', unsafe_allow_html=True)
 
 st.markdown("<hr style='border: 0.5px solid #57bb8a;'>", unsafe_allow_html=True)
 
@@ -277,6 +262,6 @@ fig.update_layout(
 )
 fig.update_traces(
     line_color="#57bb8a",
-    fillcolor="rgba(87, 187, 138, 0.4)",  # dodgerblue en semi-transparent
+    fillcolor="rgba(87, 187, 138, 0.4)",  # couleur en semi-transparent
 )
 st.plotly_chart(fig)
