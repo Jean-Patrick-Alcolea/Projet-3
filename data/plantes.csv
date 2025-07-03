@@ -1,0 +1,85 @@
+,Nom,Type,Exposition,Rusticité,Profondeur,Espacement,Temps_levée,Temperature,delai_recolte
+0,Tournesol,Fleurs,Soleil,Non résistant au gel,3 cm,40 cm,,,140 jours
+1,Topinambour,Légumes,Soleil,Résistant au gel,8 cm,40 cm,,,210 jours
+2,Sauge,Aromatiques,Soleil,Résistant au gel,,,,,
+3,Romarin,Aromatiques,Soleil,Résistant au gel,,40 cm,,,
+4,Rhubarbe,Légumes perpétuels,Mi-ombre,Résistant au gel,,100 cm,,,
+5,Raisin (vigne),Fruitiers,Soleil,Résistant au gel,,100 cm,,,
+6,Poireau perpétuel,Légumes perpétuels,Soleil,Résistant au gel,,15 cm,,,
+7,Physalis,Légumes,Soleil,Non résistant au gel,1 cm,60 cm,,,150 jours
+8,Pastèque,Fruitiers,Soleil,Non résistant au gel,1 cm,120 cm,,20 °C,
+10,Origan,Aromatiques,Soleil,Résistant au gel,,30 cm,,,
+11,Oeillet d'Inde (tagette),Fleurs,Soleil,Non résistant au gel,,25 cm,,,
+12,Myrtillier,Fruitiers,Mi-ombre,Résistant au gel,,,,,
+13,Menthe,Aromatiques,Mi-ombre,Résistant au gel,,,,,
+14,Melon,Fruitiers,Soleil,Non résistant au gel,1.5 cm,80 cm,8 jours,15 °C,150 jours
+15,Kiwitier,Fruitiers,Soleil,Peu résistant au gel,,,,,
+16,Groseiller,Fruitiers,Mi-ombre,Résistant au gel,,,,,
+17,Gingembre,Aromatiques,Soleil,Non résistant au gel,,,,,
+18,Framboisier,Fruitiers,Mi-ombre,Résistant au gel,,80 cm,,,
+19,Fraisier,Fruitiers,Soleil,Résistant au gel,,40 cm,,,
+20,Estragon,Aromatiques,Soleil,Résistant au gel,,20 cm,,,
+21,Echalote,Légumes,Soleil,Résistant au gel,1 cm,10 cm,,,180 jours
+22,Curcuma,Aromatiques,Mi-ombre,Résistant au gel,,,,,
+23,Cerisier,Fruitiers,Soleil,,,,,,
+24,Cassissier,Fruitiers,Mi-ombre,Résistant au gel,,,,,
+25,Cardon,Légumes perpétuels,Soleil,Résistant au gel,,,,,
+26,Camomille,Fleurs,Soleil,Non résistant au gel,1 cm,25 cm,15 jours,15 °C,
+27,Bourrache,Fleurs,Mi-ombre,Non résistant au gel,1 cm,30 cm,,,
+29,Ail des ours,Légumes perpétuels,Ombre,,,15 cm,,,
+30,Ail blanc,Légumes,Soleil,Résistant au gel,2 cm ,10 cm ,7 jours,15 °C,180 jours
+31,Aneth,Aromatiques,Soleil,Résistant au gel,0.5 cm ,20 cm ,20 jours,18 °C,3 années
+32,Artichaut,Légumes perpétuels,Soleil,Résistant au gel,4 cm ,80 cm ,20 jours,15 °C,120 jours
+33,Asperge,Légumes,Mi-ombre,Résistant au gel,1 cm ,8 cm ,25 jours,15 °C,730 jours
+34,Aubergine,Légumes,Soleil,Non résistant au gel,0.5 cm ,60 cm ,7 jours,18 °C,150 jours
+35,Basilic,Aromatiques,Soleil,Non résistant au gel,0.5 cm ,20 cm ,8 jours,18 °C,90 jours
+36,Betterave,Légumes,Mi-ombre,Non résistant au gel,2 cm ,12 cm ,10 jours,15 °C,120 jours
+37,"Blette (bette, poirée)",Légumes,Mi-ombre,Résistant au gel,1 cm ,50 cm ,10 jours,8 °C,90 jours
+38,Brocoli,Légumes,Soleil,Peu résistant au gel,1 cm ,50 cm ,10 jours,10 °C,75 jours
+39,Carotte,Légumes,Soleil,Résistant au gel,0.5 cm ,2 cm ,15 jours,10 °C,120 jours
+40,Céleri branche,Légumes,Soleil,Résistant au gel,0.5 cm ,30 cm ,18 jours,15 °C,210 jours
+41,Céleri rave,Légumes,Soleil,Résistant au gel,0.5 cm ,30 cm ,18 jours,15 °C,210 jours
+42,Cerfeuil,Aromatiques,Mi-ombre,Résistant au gel,0.5 cm ,10 cm ,10 jours,10 °C,50 jours
+43,Chicorée scarole / frisée,Légumes,Soleil,Résistant au gel,1 cm ,20 cm ,10 jours,18 °C,120 jours
+44,Chou cabus,Légumes,Soleil,Résistant au gel,1 cm ,60 cm ,6 jours,12 °C,150 jours
+45,Chou de Bruxelles,Légumes,Soleil,Résistant au gel,1 cm ,50 cm ,6 jours,10 °C,180 jours
+46,Chou fleur,Légumes,Soleil,Résistant au gel,1 cm ,70 cm ,5 jours,12 °C,150 jours
+47,Chou rave,Légumes,Soleil,Résistant au gel,0.5 cm ,20 cm ,8 jours,12 °C,150 jours
+48,Chou Romanesco,Légumes,Soleil,Résistant au gel,1 cm ,70 cm ,5 jours,12 °C,100 jours
+49,Ciboulette,Aromatiques,Soleil,Résistant au gel,1 cm ,10 cm ,18 jours,18 °C,90 jours
+50,Citrouille,Légumes,Soleil,Non résistant au gel,2 cm ,120 cm ,8 jours,15 °C,150 jours
+51,Concombre,Légumes,Soleil,Non résistant au gel,2 cm ,60 cm ,8 jours,15 °C,90 jours
+52,Coriandre,Aromatiques,Soleil,Non résistant au gel,1 cm ,15 cm ,15 jours,15 °C,60 jours
+53,Cornichon,Légumes,Soleil,Non résistant au gel,2 cm ,60 cm ,8 jours,15 °C,90 jours
+54,Courge,Légumes,Soleil,Non résistant au gel,2 cm ,120 cm ,8 jours,15 °C,150 jours
+55,Courgette verte,Légumes,Soleil,Non résistant au gel,2 cm ,100 cm ,8 jours,15 °C,70 jours
+56,Cresson alénois,Légumes,Mi-ombre,Résistant au gel,0.5 cm ,15 cm ,4 jours,15 °C,80 jours
+57,Endive (chicon),Légumes,Soleil,Résistant au gel,1 cm ,30 cm ,10 jours,18 °C,180 jours
+58,Epinard,Légumes,Mi-ombre,Résistant au gel,1 cm ,10 cm ,10 jours,10 °C,60 jours
+59,Fenouil,Légumes,Soleil,Résistant au gel,1 cm ,15 cm ,10 jours,15 °C,90 jours
+60,Fève,Légumes,Soleil,Résistant au gel,3 cm ,10 cm ,10 jours,15 °C,80 jours
+61,Haricots beurre,Légumes,Soleil,Non résistant au gel,3 cm ,5 cm ,8 jours,15 °C,90 jours
+62,Haricots blancs (flageolets),Légumes,Soleil,Non résistant au gel,3 cm ,10 cm ,8 jours,15 °C,120 jours
+63,Haricots rouges,Légumes,Soleil,Non résistant au gel,3 cm ,10 cm ,8 jours,15 °C,90 jours
+64,Haricots verts,Légumes,Soleil,Non résistant au gel,3 cm ,5 cm ,8 jours,15 °C,90 jours
+65,Laitue (salade),Légumes,Soleil,Résistant au gel,0.5 cm ,25 cm ,10 jours,12 °C,75 jours
+66,Lentille,Légumes,Soleil,Résistant au gel,1 cm ,4 cm ,15 jours,8 °C,100 jours
+67,Mache,Légumes,Mi-ombre,Résistant au gel,0.5 cm ,8 cm ,10 jours,18 °C,90 jours
+68,Maïs,Légumes,Soleil,Non résistant au gel,2 cm ,15 cm ,8 jours,18 °C,120 jours
+70,Navet,Légumes,Soleil,Résistant au gel,0.5 cm ,10 cm ,6 jours,15 °C,90 jours
+71,Panais,Légumes,Soleil,Résistant au gel,1 cm ,10 cm ,28 jours,18 °C,180 jours
+72,Persil,Aromatiques,Mi-ombre,Résistant au gel,0.5 cm ,10 cm ,21 jours,18 °C,90 jours
+73,Petit pois,Légumes,Soleil,Non résistant au gel,2 cm ,4 cm ,20 jours,12 °C,120 jours
+74,Piment,Légumes,Soleil,Non résistant au gel,0.5 cm ,50 cm ,15 jours,15 °C,150 jours
+75,Poireau d'été,Légumes,Soleil,Résistant au gel,1 cm ,10 cm ,15 jours,12 °C,180 jours
+76,Poireau d'hiver,Légumes,Soleil,Résistant au gel,1 cm ,10 cm ,15 jours,12 °C,180 jours
+77,Pois mangetout,Légumes,Soleil,Non résistant au gel,2 cm ,4 cm ,20 jours,12 °C,120 jours
+78,Poivron,Légumes,Soleil,Non résistant au gel,0.5 cm ,50 cm ,15 jours,15 °C,150 jours
+79,Potimarron,Légumes,Soleil,Non résistant au gel,2 cm ,120 cm ,8 jours,15 °C,150 jours
+80,Potiron,Légumes,Soleil,Non résistant au gel,2 cm ,120 cm ,8 jours,15 °C,150 jours
+81,Radis noir (d'hiver),Légumes,Soleil,Non résistant au gel,0.5 cm ,8 cm ,5 jours,8 °C,150 jours
+82,Radis rouge,Légumes,Mi-ombre,Résistant au gel,0.5 cm ,8 cm ,5 jours,8 °C,40 jours
+83,Salsifi (Scorsonère),Légumes,Soleil,Résistant au gel,1 cm ,10 cm ,15 jours,15 °C,150 jours
+84,Thym,Aromatiques,Soleil,Résistant au gel,0.5 cm ,25 cm ,21 jours,20 °C,150 jours
+85,Tomate,Légumes,Soleil,Non résistant au gel,1 cm ,60 cm ,8 jours,15 °C,120 jours
+86,Tomates cerises,Légumes,Soleil,Non résistant au gel,1 cm ,60 cm ,8 jours,15 °C,100 jours
