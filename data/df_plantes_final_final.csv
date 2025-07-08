@@ -1,0 +1,84 @@
+Nom,Type,Exposition,Rusticité,Profondeur,Espacement,Temps_levée,Temperature,delai_recolte,image,Zone climatique idéale,Sol requis,Besoin en eau,Calendrier des semis,Calendrier des récoltes
+Aneth,Aromatiques,Soleil,Résistant au gel,0.5,20.0,20.0,18.0,,Aneth,"H1, H2","Limoneux, Sableux",Moyen,Avril à juin,Juillet à septembre
+Basilic,Aromatiques,Soleil,Non résistant au gel,0.5,20.0,8.0,18.0,90.0,Basilic,H3,"Limoneux, Sableux",Élevé,Mai à juin,Juin à octobre
+Cerfeuil,Aromatiques,Mi-ombre,Résistant au gel,0.5,10.0,10.0,10.0,50.0,Cerfeuil,H1,Limoneux,Moyen,Mars à septembre,Avril à octobre
+Ciboulette,Aromatiques,Soleil,Résistant au gel,1.0,10.0,18.0,18.0,90.0,Ciboulette,"H1, H2",Limoneux,Moyen,Mars à juillet,Mai à octobre
+Coriandre,Aromatiques,Soleil,Non résistant au gel,1.0,15.0,15.0,15.0,60.0,Coriandre,"H1, H2","Limoneux, Sableux",Moyen,Avril à mai,Juin à septembre
+Curcuma,Aromatiques,Mi-ombre,Résistant au gel,,,,,,Curcuma,H3,Sableux,Élevé,Mars à avril,Septembre à octobre
+Estragon,Aromatiques,Soleil,Résistant au gel,,20.0,,,,Estragon,"H2, H3","Limoneux, Argileux",Moyen,Avril à mai,Juin à octobre
+Menthe,Aromatiques,Mi-ombre,Résistant au gel,,,,,,Menthe,"H1, H2","Limoneux, Argileux",Moyen,Mars à juin,Mai à octobre
+Origan,Aromatiques,Soleil,Résistant au gel,,30.0,,,,Origan,H3,Sableux,Faible,Avril à mai,Juillet à septembre
+Persil,Aromatiques,Mi-ombre,Résistant au gel,0.5,10.0,21.0,18.0,90.0,Persil,"H1, H2",Limoneux,Moyen,Mars à juillet,Mai à octobre
+Romarin,Aromatiques,Soleil,Résistant au gel,,40.0,,,,Romarin,H3,Sableux,Faible,Mars à avril,Toute l'année
+Sauge,Aromatiques,Soleil,Résistant au gel,,,,,,Sauge,H3,Sableux,Faible,Mars à mai,Juin à octobre
+Thym,Aromatiques,Soleil,Résistant au gel,0.5,25.0,21.0,20.0,150.0,Thym,H3,Sableux,Faible,Avril à juin,Juin à octobre
+Bourrache,Fleurs,Mi-ombre,Non résistant au gel,1.0,30.0,,,,Bourrache,"H1, H2",Limoneux,Moyen,Avril à mai,Juin à septembre
+Camomille,Fleurs,Soleil,Non résistant au gel,1.0,25.0,15.0,15.0,,Camomille,"H1, H2","Limoneux, Sableux",Moyen,Avril à juin,Juin à septembre
+Oeillet d'Inde,Fleurs,Soleil,Non résistant au gel,,25.0,,,,Oeillet d'Inde,,,Moyen,Mai à juin,Juillet à octobre
+Tournesol,Fleurs,Soleil,Non résistant au gel,3.0,40.0,,,140.0,Tournesol,"H2, H3",Sableux,Moyen,Avril à mai,Septembre à octobre
+Cassissier,Fruitiers,Mi-ombre,Résistant au gel,,,,,,Cassissier,"H1, H2","Limoneux, Argileux",Moyen,Octobre à mars,Juillet à août
+Cerisier,Fruitiers,Soleil,,,,,,,Cerisier,H2,Limoneux,Moyen,Novembre à mars,Juin à juillet
+Fraisier,Fruitiers,Soleil,Résistant au gel,,40.0,,,,Fraisier,"H1, H2",Limoneux,Élevé,Août à octobre,Mai à juillet
+Framboisier,Fruitiers,Mi-ombre,Résistant au gel,,80.0,,,,Framboisier,"H1, H2","Limoneux, Argileux",Moyen,Octobre à mars,Juin à juillet
+Groseiller,Fruitiers,Mi-ombre,Résistant au gel,,,,,,Groseiller,"H1, H2",Limoneux,Moyen,Octobre à mars,Juin à juillet
+Kiwitier,Fruitiers,Soleil,Peu résistant au gel,,,,,,Kiwitier,"H1, H2","Limoneux, Argileux",Élevé,Novembre à mars,Septembre à octobre
+Melon,Fruitiers,Soleil,Non résistant au gel,1.5,80.0,8.0,15.0,150.0,Melon,H3,Sableux,Élevé,Avril à mai,Juillet à septembre
+Myrtillier,Fruitiers,Mi-ombre,Résistant au gel,,,,,,Myrtillier,H1,"Sableux, Argileux",Élevé,Octobre à mars,Juillet à août
+Pastèque,Fruitiers,Soleil,Non résistant au gel,1.0,120.0,,20.0,,Pastèque,H3,Sableux,Élevé,Avril à mai,Juillet à septembre
+Raisin,Fruitiers,Soleil,Résistant au gel,,100.0,,,,Raisin,H3,Sableux,Moyen,Novembre à mars,Septembre à octobre
+Ail blanc,Légumes,Soleil,Résistant au gel,2.0,10.0,7.0,15.0,180.0,Ail blanc,"H1, H2","Limoneux, Sableux",Faible,Octobre à mars,Juin à juillet
+Asperge,Légumes,Mi-ombre,Résistant au gel,1.0,8.0,25.0,15.0,730.0,Asperge,"H2, H3",Sableux,Moyen,Mars à avril,Avril à juin
+Aubergine,Légumes,Soleil,Non résistant au gel,0.5,60.0,7.0,18.0,150.0,Aubergine,H3,"Limoneux, Sableux",Élevé,Mars à avril,Juillet à septembre
+Betterave,Légumes,Mi-ombre,Non résistant au gel,2.0,12.0,10.0,15.0,120.0,Betterave,"H1, H2","Limoneux, Argileux",Moyen,Avril à juin,Juin à octobre
+Blette,Légumes,Mi-ombre,Résistant au gel,1.0,50.0,10.0,8.0,90.0,Blette,"H1, H2",Limoneux,Moyen,Avril à juin,Juillet à octobre
+Brocoli,Légumes,Soleil,Peu résistant au gel,1.0,50.0,10.0,10.0,75.0,Brocoli,"H1, H2",Limoneux,Moyen,Mars à juin,Juin à octobre
+Carotte,Légumes,Soleil,Résistant au gel,0.5,2.0,15.0,10.0,120.0,Carotte,"H1, H2",Sableux,Moyen,Mars à juillet,Juin à octobre
+Chicorée scarole,Légumes,Soleil,Résistant au gel,1.0,20.0,10.0,18.0,120.0,Chicorée scarole,,,Moyen,Mai à juillet,Juillet à novembre
+Chou Romanesco,Légumes,Soleil,Résistant au gel,1.0,70.0,5.0,12.0,100.0,Chou Romanesco,H2,Argileux,Moyen,Mars à juin,Septembre à novembre
+Chou cabus,Légumes,Soleil,Résistant au gel,1.0,60.0,6.0,12.0,150.0,Chou cabus,"H1, H2",Argileux,Moyen,Mars à juin,Juillet à novembre
+Chou de Bruxelles,Légumes,Soleil,Résistant au gel,1.0,50.0,6.0,10.0,180.0,Chou de Bruxelles,"H1, H2",Argileux,Moyen,Mars à avril,Septembre à février
+Chou-fleur,Légumes,Soleil,Résistant au gel,1.0,70.0,5.0,12.0,150.0,Chou-fleur,"H1, H2","Limoneux, Argileux",Moyen,Mars à juin,Juillet à novembre
+Chou rave,Légumes,Soleil,Résistant au gel,0.5,20.0,8.0,12.0,150.0,Chou rave,"H1, H2","Limoneux, Argileux",Moyen,Mars à juin,Juillet à novembre
+Citrouille,Légumes,Soleil,Non résistant au gel,2.0,120.0,8.0,15.0,150.0,Citrouille,"H2, H3","Limoneux, Sableux",Moyen,Avril à mai,Septembre à octobre
+Concombre,Légumes,Soleil,Non résistant au gel,2.0,60.0,8.0,15.0,90.0,Concombre,"H2, H3","Limoneux, Sableux",Élevé,Avril à mai,Juillet à septembre
+Cornichon,Légumes,Soleil,Non résistant au gel,2.0,60.0,8.0,15.0,90.0,Cornichon,"H2, H3","Limoneux, Sableux",Élevé,Avril à mai,Juillet à septembre
+Courge,Légumes,Soleil,Non résistant au gel,2.0,120.0,8.0,15.0,150.0,Courge,"H2, H3","Limoneux, Sableux",Moyen,Avril à mai,Septembre à octobre
+Courgette,Légumes,Soleil,Non résistant au gel,2.0,100.0,8.0,15.0,70.0,Courgette,"H2, H3","Limoneux, Sableux",Élevé,Avril à mai,Juin à septembre
+Cresson alénois,Légumes,Mi-ombre,Résistant au gel,0.5,15.0,4.0,15.0,80.0,Cresson alénois,H1,Argileux,Élevé,Mars à septembre,Avril à octobre
+Céleri branche,Légumes,Soleil,Résistant au gel,0.5,30.0,18.0,15.0,210.0,Céleri branche,"H1, H2",Limoneux,Élevé,Mars à avril,Juillet à octobre
+Céleri rave,Légumes,Soleil,Résistant au gel,0.5,30.0,18.0,15.0,210.0,Céleri rave,"H1, H2","Limoneux, Argileux",Élevé,Mars à avril,Juillet à octobre
+Échalote,Légumes,Soleil,Résistant au gel,1.0,10.0,,,180.0,Échalote,"H1, H2","Limoneux, Sableux",Faible,Octobre à mars,Juin à juillet
+Endive,Légumes,Soleil,Résistant au gel,1.0,30.0,10.0,18.0,180.0,Endive,"H1, H2",Argileux,Moyen,Mai à juillet,Octobre à mars
+Épinard,Légumes,Mi-ombre,Résistant au gel,1.0,10.0,10.0,10.0,60.0,Épinard,"H1, H2","Limoneux, Argileux",Moyen,Mars à septembre,Avril à octobre
+Fenouil,Légumes,Soleil,Résistant au gel,1.0,15.0,10.0,15.0,90.0,Fenouil,"H2, H3","Limoneux, Sableux",Moyen,Avril à juin,Juillet à octobre
+Fève,Légumes,Soleil,Résistant au gel,3.0,10.0,10.0,15.0,80.0,Fève,"H1, H2","Limoneux, Argileux",Moyen,Octobre à mars,Mai à juillet
+Haricots beurre,Légumes,Soleil,Non résistant au gel,3.0,5.0,8.0,15.0,90.0,Haricots beurre,"H2, H3","Limoneux, Sableux",Moyen,Avril à mai,Juin à septembre
+Haricots blancs,Légumes,Soleil,Non résistant au gel,3.0,10.0,8.0,15.0,120.0,Haricots blancs,,,Moyen,Avril à mai,Juillet à septembre
+Haricots rouges,Légumes,Soleil,Non résistant au gel,3.0,10.0,8.0,15.0,90.0,Haricots rouges,"H2, H3","Limoneux, Sableux",Moyen,Avril à mai,Juillet à septembre
+Haricots verts,Légumes,Soleil,Non résistant au gel,3.0,5.0,8.0,15.0,90.0,Haricots verts,"H2, H3","Limoneux, Sableux",Moyen,Avril à mai,Juin à septembre
+Laitue,Légumes,Soleil,Résistant au gel,0.5,25.0,10.0,12.0,75.0,Laitue,"H1, H2",Limoneux,Moyen,Mars à septembre,Avril à octobre
+Lentille,Légumes,Soleil,Résistant au gel,1.0,4.0,15.0,8.0,100.0,Lentille,H2,Sableux,Faible,Mars à avril,Juillet à août
+Mâche,Légumes,Mi-ombre,Résistant au gel,0.5,8.0,10.0,18.0,90.0,Mâche,,,Moyen,Août à septembre,Octobre à mars
+Maïs,Légumes,Soleil,Non résistant au gel,2.0,15.0,8.0,18.0,120.0,Maïs,"H2, H3",Sableux,Élevé,Avril à mai,Août à septembre
+Navet,Légumes,Soleil,Résistant au gel,0.5,10.0,6.0,15.0,90.0,Navet,"H1, H2","Limoneux, Argileux",Moyen,Mars à septembre,Mai à octobre
+Panais,Légumes,Soleil,Résistant au gel,1.0,10.0,28.0,18.0,180.0,Panais,"H1, H2","Limoneux, Argileux",Moyen,Mars à avril,Septembre à mars
+Petit pois,Légumes,Soleil,Non résistant au gel,2.0,4.0,20.0,12.0,120.0,Petit pois,"H1, H2",Limoneux,Moyen,Octobre à mars,Mai à juillet
+Physalis,Légumes,Soleil,Non résistant au gel,1.0,60.0,,,150.0,Physalis,"H2, H3","Limoneux, Sableux",Moyen,Mars à avril,Juillet à septembre
+Piment,Légumes,Soleil,Non résistant au gel,0.5,50.0,15.0,15.0,150.0,Piment,H3,"Limoneux, Sableux",Moyen,Mars à avril,Juillet à octobre
+Poireau d'hiver,Légumes,Soleil,Résistant au gel,1.0,10.0,15.0,12.0,180.0,Poireau d'hiver,"H1, H2","Limoneux, Argileux",Moyen,Février à mars,Octobre à mars
+Poireau d'été,Légumes,Soleil,Résistant au gel,1.0,10.0,15.0,12.0,180.0,Poireau d'été,"H1, H2",Limoneux,Moyen,Mars à avril,Juillet à octobre
+Pois mangetout,Légumes,Soleil,Non résistant au gel,2.0,4.0,20.0,12.0,120.0,Pois mangetout,"H1, H2",Limoneux,Moyen,Mars à avril,Mai à juillet
+Poivron,Légumes,Soleil,Non résistant au gel,0.5,50.0,15.0,15.0,150.0,Poivron,H3,"Limoneux, Sableux",Moyen,Mars à avril,Juillet à octobre
+Potimarron,Légumes,Soleil,Non résistant au gel,2.0,120.0,8.0,15.0,150.0,Potimarron,"H2, H3","Limoneux, Sableux",Moyen,Avril à mai,Septembre à octobre
+Potiron,Légumes,Soleil,Non résistant au gel,2.0,120.0,8.0,15.0,150.0,Potiron,"H2, H3","Limoneux, Sableux",Moyen,Avril à mai,Septembre à octobre
+Radis noir,Légumes,Soleil,Non résistant au gel,0.5,8.0,5.0,8.0,150.0,Radis noir,"H1, H2",Limoneux,Moyen,Juin à septembre,Octobre à mars
+Radis rouge,Légumes,Mi-ombre,Résistant au gel,0.5,8.0,5.0,8.0,40.0,Radis rouge,"H1, H2",Sableux,Moyen,Mars à septembre,Avril à octobre
+Salsifi,Légumes,Soleil,Résistant au gel,1.0,10.0,15.0,15.0,150.0,Salsifi,"H1, H2",Argileux,Moyen,Mars à mai,Octobre à mars
+Tomate,Légumes,Soleil,Non résistant au gel,1.0,60.0,8.0,15.0,120.0,Tomate,"H2, H3","Limoneux, Sableux",Élevé,Mars à avril,Juillet à octobre
+Tomates cerises,Légumes,Soleil,Non résistant au gel,1.0,60.0,8.0,15.0,100.0,Tomates cerises,"H2, H3","Limoneux, Sableux",Élevé,Mars à avril,Juin à septembre
+Topinambour,Légumes,Soleil,Résistant au gel,8.0,40.0,,,210.0,Topinambour,"H1, H2",Argileux,Faible,Février à mars,Octobre à mars
+Ail des ours,Légumes perpétuels,Ombre,,,15.0,,,,Ail des ours,H1,Argileux,Moyen,Septembre à octobre,Avril à juin
+Artichaut,Légumes perpétuels,Soleil,Résistant au gel,4.0,80.0,20.0,15.0,120.0,Artichaut,"H2, H3","Limoneux, Argileux",Moyen,Mars à avril,Juin à septembre
+Cardon,Légumes perpétuels,Soleil,Résistant au gel,,,,,,Cardon,H2,"Limoneux, Argileux",Moyen,Avril à mai,Octobre à mars
+Poireau perpétuel,Légumes perpétuels,Soleil,Résistant au gel,,15.0,,,,Poireau perpétuel,"H1, H2",Limoneux,Moyen,Février à mars,Toute l'année
+Rhubarbe,Légumes perpétuels,Mi-ombre,Résistant au gel,,100.0,,,,Rhubarbe,"H1, H2","Limoneux, Argileux",Moyen,Mars à avril,Avril à juin

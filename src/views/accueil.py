@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import helpers.import_manager as import_manager
 from streamlit_cookies_controller import CookieController
 
 cookie_manager = CookieController()
@@ -14,11 +15,7 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-if "df" not in st.session_state:
-    df = pd.read_parquet("data/codes_postaux_final.gzip")
-    st.session_state["df"] = df
-else:
-    df = st.session_state["df"]
+df = import_manager.get_df_cp()
 
 st.dataframe(df)
 
