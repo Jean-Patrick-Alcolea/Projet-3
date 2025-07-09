@@ -5,7 +5,9 @@ import difflib
 
 def get_df_plantes():
     if "df_plantes" not in st.session_state:
-        df_plantes = pd.read_csv("data/df_plantes_final_url.csv")
+        df_plantes = pd.read_parquet(
+            "data/df_plantes_w_calendrier.gzip",
+        )
         st.session_state["df_plantes"] = df_plantes
     else:
         df_plantes = st.session_state["df_plantes"]
@@ -54,6 +56,22 @@ if search:
     df_plantes = df_plantes[
         df_plantes["Nom"].str.contains(search, case=False, na=False)
     ]
+
+# recherche par mois de semis
+Mois = ["Tous","janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
+reponse = st.radio("Mois de semis", Mois, horizontal=True)
+if reponse == "Tous":
+    df_plantes = get_df_plantes()
+else:
+    df_plantes = df_plantes[df_plantes["Calendrier_Semis"].apply(lambda x: reponse in x)]
+
+# recherche par mois de recolte
+# Mois = ["Tous","janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
+# reponse_recol = st.radio("Mois de récolte", Mois, horizontal=True)
+# if reponse_recol == "Tous":
+   #  df_plantes = get_df_plantes()
+# else:
+  #  df_plantes = df_plantes[df_plantes["Calendrier_Recolte"].apply(lambda x: reponse_recol in x)]
 
 # pagination
 
