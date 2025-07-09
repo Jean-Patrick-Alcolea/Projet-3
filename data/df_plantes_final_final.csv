@@ -5,6 +5,7 @@ Cerfeuil,Aromatiques,Mi-ombre,Résistant au gel,0.5,10.0,10.0,10.0,50.0,Cerfeuil
 Ciboulette,Aromatiques,Soleil,Résistant au gel,1.0,10.0,18.0,18.0,90.0,Ciboulette,"H1, H2",Limoneux,Moyen,Mars à juillet,Mai à octobre
 Coriandre,Aromatiques,Soleil,Non résistant au gel,1.0,15.0,15.0,15.0,60.0,Coriandre,"H1, H2","Limoneux, Sableux",Moyen,Avril à mai,Juin à septembre
 Curcuma,Aromatiques,Mi-ombre,Résistant au gel,,,,,,Curcuma,H3,Sableux,Élevé,Mars à avril,Septembre à octobre
+Gingembre,Aromatiques,Mi-ombre à Soleil,Non rustique,3.0,30.0,15.0,22.0,270.0,Gingembre,"H2, H3","Limoneux, Sableux",Élevé,Février à mai,Août à décembre
 Estragon,Aromatiques,Soleil,Résistant au gel,,20.0,,,,Estragon,"H2, H3","Limoneux, Argileux",Moyen,Avril à mai,Juin à octobre
 Menthe,Aromatiques,Mi-ombre,Résistant au gel,,,,,,Menthe,"H1, H2","Limoneux, Argileux",Moyen,Mars à juin,Mai à octobre
 Origan,Aromatiques,Soleil,Résistant au gel,,30.0,,,,Origan,H3,Sableux,Faible,Avril à mai,Juillet à septembre

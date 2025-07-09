@@ -15,7 +15,7 @@
 13,Thym,Aromatiques,Soleil,Résistant au gel,0.5,25.0,21.0,20.0,150.0,https://img.permapotes.com/cover-square/0f0e3a9dce42945c08234f31c9380e65.jpg,H3,Sableux
 14,Bourrache,Fleurs,Mi-ombre,Non résistant au gel,1.0,30.0,,,,https://img.permapotes.com/cover-square/d98623e2708bc9636b3e8e6a389a8c9b.jpg,"H1, H2",Limoneux
 15,Camomille,Fleurs,Soleil,Non résistant au gel,1.0,25.0,15.0,15.0,,https://img.permapotes.com/cover-square/456fb6c63b23b4aa714422640b6015e8.jpg,"H1, H2","Limoneux, Sableux"
-16,Oeillet d'Inde (tagette),Fleurs,Soleil,Non résistant au gel,,25.0,,,,https://img.permapotes.com/cover-square/a522b1862a9d72913ea23dbbd59c63d9.jpg,,
+16,Oeillet d'Inde,Fleurs,Soleil,Non résistant au gel,,25.0,,,,https://img.permapotes.com/cover-square/a522b1862a9d72913ea23dbbd59c63d9.jpg,,
 17,Tournesol,Fleurs,Soleil,Non résistant au gel,3.0,40.0,,,140.0,https://img.permapotes.com/cover-square/90ff603e98b31b4e69190713ddea0766.jpg,"H2, H3",Sableux
 18,Cassissier,Fruitiers,Mi-ombre,Résistant au gel,,,,,,https://img.permapotes.com/cover-square/6b4df53b8e417f22633bd559b2ef7a71.jpg,"H1, H2","Limoneux, Argileux"
 19,Cerisier,Fruitiers,Soleil,,,,,,,https://img.permapotes.com/cover-square/5fe43f9cd18782248fd446a2cff91c59.jpg,H2,Limoneux
@@ -26,15 +26,15 @@
 24,Melon,Fruitiers,Soleil,Non résistant au gel,1.5,80.0,8.0,15.0,150.0,https://img.permapotes.com/cover-square/886aee0b019d89e3609c2ccc2e518b39.jpg,H3,Sableux
 25,Myrtillier,Fruitiers,Mi-ombre,Résistant au gel,,,,,,https://img.permapotes.com/cover-square/fa6af989f948348f8dff4b05e1887d09.jpg,H1,"Sableux, Argileux"
 26,Pastèque,Fruitiers,Soleil,Non résistant au gel,1.0,120.0,,20.0,,https://img.permapotes.com/cover-square/2d5023e9aa1b16ba69b52c9a75390c62.jpg,H3,Sableux
-27,Raisin (vigne),Fruitiers,Soleil,Résistant au gel,,100.0,,,,https://img.permapotes.com/cover-square/4d896909a464f3d72c720e9f3d81e19d.jpg,H3,Sableux
+27,Raisin,Fruitiers,Soleil,Résistant au gel,,100.0,,,,https://img.permapotes.com/cover-square/4d896909a464f3d72c720e9f3d81e19d.jpg,H3,Sableux
 28,Ail blanc,Légumes,Soleil,Résistant au gel,2.0,10.0,7.0,15.0,180.0,https://img.permapotes.com/cover-square/64031dc651616919b429a525478733f8.jpg,"H1, H2","Limoneux, Sableux"
 29,Asperge,Légumes,Mi-ombre,Résistant au gel,1.0,8.0,25.0,15.0,730.0,https://img.permapotes.com/cover-square/3a9f37984f7a2836ec7637a9643e6d3c.jpg,"H2, H3",Sableux
 30,Aubergine,Légumes,Soleil,Non résistant au gel,0.5,60.0,7.0,18.0,150.0,https://img.permapotes.com/cover-square/37fdf5b11faad699032e2fc887a6723c.jpg,H3,"Limoneux, Sableux"
 31,Betterave,Légumes,Mi-ombre,Non résistant au gel,2.0,12.0,10.0,15.0,120.0,https://img.permapotes.com/cover-square/fdedf6ae2a645e8f56620b36e33f2651.jpg,"H1, H2","Limoneux, Argileux"
-32,"Blette (bette, poirée)",Légumes,Mi-ombre,Résistant au gel,1.0,50.0,10.0,8.0,90.0,https://img.permapotes.com/cover-square/14741c1c206d2124786eedc56502c131.JPG,"H1, H2",Limoneux
+32,Blette,Légumes,Mi-ombre,Résistant au gel,1.0,50.0,10.0,8.0,90.0,https://img.permapotes.com/cover-square/14741c1c206d2124786eedc56502c131.JPG,"H1, H2",Limoneux
 33,Brocoli,Légumes,Soleil,Peu résistant au gel,1.0,50.0,10.0,10.0,75.0,https://img.permapotes.com/cover-square/99014f0867e6008fc656a36338c4c581.jpg,"H1, H2",Limoneux
 34,Carotte,Légumes,Soleil,Résistant au gel,0.5,2.0,15.0,10.0,120.0,https://img.permapotes.com/cover-square/33de9adc5ae163988d31fbe365676b49.jpg,"H1, H2",Sableux
-35,Chicorée scarole / frisée,Légumes,Soleil,Résistant au gel,1.0,20.0,10.0,18.0,120.0,https://img.permapotes.com/cover-square/6dba424bc704c1fe8471e41ed0d2e1ae.jpg,,
+35,Chicorée scarole,Légumes,Soleil,Résistant au gel,1.0,20.0,10.0,18.0,120.0,https://img.permapotes.com/cover-square/6dba424bc704c1fe8471e41ed0d2e1ae.jpg,,
 36,Chou Romanesco,Légumes,Soleil,Résistant au gel,1.0,70.0,5.0,12.0,100.0,https://img.permapotes.com/cover-square/b2b2d0a1b27b5024ead8dea2c11a3bfd.jpeg,H2,Argileux
 37,Chou cabus,Légumes,Soleil,Résistant au gel,1.0,60.0,6.0,12.0,150.0,https://img.permapotes.com/cover-square/dfd7d29c801f7a5e6a2f3388ced2ad53.jpg,"H1, H2",Argileux
 38,Chou de Bruxelles,Légumes,Soleil,Résistant au gel,1.0,50.0,6.0,10.0,180.0,https://img.permapotes.com/cover-square/de2c7cee53f67ebe1e3c353fb2c69481.jpg,"H1, H2",Argileux
@@ -49,15 +49,15 @@
 47,Céleri branche,Légumes,Soleil,Résistant au gel,0.5,30.0,18.0,15.0,210.0,https://img.permapotes.com/cover-square/c5466b06a271be47fc2d515a4303e599.jpg,"H1, H2",Limoneux
 48,Céleri rave,Légumes,Soleil,Résistant au gel,0.5,30.0,18.0,15.0,210.0,https://img.permapotes.com/cover-square/25a003dac7bdeb958ee48043a1e32fdb.jpg,"H1, H2","Limoneux, Argileux"
 49,Echalote,Légumes,Soleil,Résistant au gel,1.0,10.0,,,180.0,https://img.permapotes.com/cover-square/0dea85d51eb351837ee3f2f99ab13a52.jpg,"H1, H2","Limoneux, Sableux"
-50,Endive (chicon),Légumes,Soleil,Résistant au gel,1.0,30.0,10.0,18.0,180.0,https://img.permapotes.com/cover-square/b789a0bf4336181ae6aef660d37f43e7.jpg,"H1, H2",Argileux
+50,Endive,Légumes,Soleil,Résistant au gel,1.0,30.0,10.0,18.0,180.0,https://img.permapotes.com/cover-square/b789a0bf4336181ae6aef660d37f43e7.jpg,"H1, H2",Argileux
 51,Epinard,Légumes,Mi-ombre,Résistant au gel,1.0,10.0,10.0,10.0,60.0,https://img.permapotes.com/cover-square/fd57bb4047580be2863233a40085ab8c.jpg,"H1, H2","Limoneux, Argileux"
 52,Fenouil,Légumes,Soleil,Résistant au gel,1.0,15.0,10.0,15.0,90.0,https://img.permapotes.com/cover-square/4426258e97bd182f36fd2675ee6531c4.jpg,"H2, H3","Limoneux, Sableux"
 53,Fève,Légumes,Soleil,Résistant au gel,3.0,10.0,10.0,15.0,80.0,https://img.permapotes.com/cover-square/cb58553b7158a84da8fc8d363601f525.JPG,"H1, H2","Limoneux, Argileux"
 54,Haricots beurre,Légumes,Soleil,Non résistant au gel,3.0,5.0,8.0,15.0,90.0,https://img.permapotes.com/cover-square/df5b980f0311cd7b15d49fba95aaacfc.jpg,"H2, H3","Limoneux, Sableux"
-55,Haricots blancs (flageolets),Légumes,Soleil,Non résistant au gel,3.0,10.0,8.0,15.0,120.0,https://img.permapotes.com/cover-square/b37ae2f7b9187851077d8801d4864abb.jpeg,,
+55,Haricots blancs,Légumes,Soleil,Non résistant au gel,3.0,10.0,8.0,15.0,120.0,https://img.permapotes.com/cover-square/b37ae2f7b9187851077d8801d4864abb.jpeg,,
 56,Haricots rouges,Légumes,Soleil,Non résistant au gel,3.0,10.0,8.0,15.0,90.0,https://img.permapotes.com/cover-square/17c6c0f9be30c0f2c8384bac3d8a1be3.jpg,"H2, H3","Limoneux, Sableux"
 57,Haricots verts,Légumes,Soleil,Non résistant au gel,3.0,5.0,8.0,15.0,90.0,https://img.permapotes.com/cover-square/d261d8de19087b226f9d988177346da8.jpeg,"H2, H3","Limoneux, Sableux"
-58,Laitue (salade),Légumes,Soleil,Résistant au gel,0.5,25.0,10.0,12.0,75.0,https://img.permapotes.com/cover-square/3bae90e1bee5a6dae79fb9896b5bceea.jpeg,"H1, H2",Limoneux
+58,Laitue,Légumes,Soleil,Résistant au gel,0.5,25.0,10.0,12.0,75.0,https://img.permapotes.com/cover-square/3bae90e1bee5a6dae79fb9896b5bceea.jpeg,"H1, H2",Limoneux
 59,Lentille,Légumes,Soleil,Résistant au gel,1.0,4.0,15.0,8.0,100.0,https://img.permapotes.com/cover-square/b10d598b25ee0fcf1a6f1986d0471ba1.jpg,H2,Sableux
 60,Mache,Légumes,Mi-ombre,Résistant au gel,0.5,8.0,10.0,18.0,90.0,https://img.permapotes.com/cover-square/6636a199866c3a1ad915cf5ba4917cb2.jpg,,
 61,Maïs,Légumes,Soleil,Non résistant au gel,2.0,15.0,8.0,18.0,120.0,https://img.permapotes.com/cover-square/689fdde2033cce901adcd05db7c87bfa.jpg,"H2, H3",Sableux
@@ -72,9 +72,9 @@
 70,Poivron,Légumes,Soleil,Non résistant au gel,0.5,50.0,15.0,15.0,150.0,https://img.permapotes.com/cover-square/48eeb49a4a89203c21846d7a25be022d.jpg,H3,"Limoneux, Sableux"
 71,Potimarron,Légumes,Soleil,Non résistant au gel,2.0,120.0,8.0,15.0,150.0,https://img.permapotes.com/cover-square/47f55718d89e8ca410ef767a498ccd3c.jpg,"H2, H3","Limoneux, Sableux"
 72,Potiron,Légumes,Soleil,Non résistant au gel,2.0,120.0,8.0,15.0,150.0,https://img.permapotes.com/cover-square/370973fe545b373c09762f20ccb3db4c.jpg,"H2, H3","Limoneux, Sableux"
-73,Radis noir (d'hiver),Légumes,Soleil,Non résistant au gel,0.5,8.0,5.0,8.0,150.0,https://img.permapotes.com/cover-square/b45d630908be4f5b465893aadff971ac.jpg,"H1, H2",Limoneux
+73,Radis noir,Légumes,Soleil,Non résistant au gel,0.5,8.0,5.0,8.0,150.0,https://img.permapotes.com/cover-square/b45d630908be4f5b465893aadff971ac.jpg,"H1, H2",Limoneux
 74,Radis rouge,Légumes,Mi-ombre,Résistant au gel,0.5,8.0,5.0,8.0,40.0,https://img.permapotes.com/cover-square/58676540ff0c998ef2b59bcb4a106293.jpg,"H1, H2",Sableux
-75,Salsifi (Scorsonère),Légumes,Soleil,Résistant au gel,1.0,10.0,15.0,15.0,150.0,https://img.permapotes.com/cover-square/8b1faa8edc95d0acc4d8d9f7bc98c688.jpg,"H1, H2",Argileux
+75,Salsifi,Légumes,Soleil,Résistant au gel,1.0,10.0,15.0,15.0,150.0,https://img.permapotes.com/cover-square/8b1faa8edc95d0acc4d8d9f7bc98c688.jpg,"H1, H2",Argileux
 76,Tomate,Légumes,Soleil,Non résistant au gel,1.0,60.0,8.0,15.0,120.0,https://img.permapotes.com/cover-square/86d2686f68972480ed7183139ae91723.jpg,"H2, H3","Limoneux, Sableux"
 77,Tomates cerises,Légumes,Soleil,Non résistant au gel,1.0,60.0,8.0,15.0,100.0,https://img.permapotes.com/cover-square/38c37045978710b5e77d6c9f62ed86c2.jpg,"H2, H3","Limoneux, Sableux"
 78,Topinambour,Légumes,Soleil,Résistant au gel,8.0,40.0,,,210.0,https://img.permapotes.com/cover-square/d292b5845ed3fabf77dc49397e7ddbf5.jpg,"H1, H2",Argileux
