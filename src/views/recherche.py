@@ -1,4 +1,5 @@
 import streamlit as st
+from streamlit_cookies_controller import CookieController
 import pandas as pd
 
 
@@ -15,6 +16,8 @@ def get_df_plantes():
 
 df_plantes = get_df_plantes()
 
+cookie_manager = CookieController()
+mon_jardin_cookie = cookie_manager.get("mon_jardin")
 
 st.markdown(
     """
@@ -67,13 +70,14 @@ color: #57bb8a;
 st.markdown(
     f"""
     <h1 style='text-align: center; color: #57bb8a;font-family: "Economica";'>
-        Trouve ta plante 🔎☘️
+        Trouve ta plante 🔎🍀
     </h1>
     """,
     unsafe_allow_html=True,
 )
 
 if st.query_params.get("page") == "detail":
+
     id_plante = int(st.query_params.get("selected_plant"))
     selected_plant = df_plantes.loc[id_plante]
     ############### TITRE ################
@@ -92,17 +96,36 @@ if st.query_params.get("page") == "detail":
         "Faible": " 5 à 10 L/m²/semaine",
         "Élevé": "20 à 40 L/m²/semaine",
     }
-
+    if mon_jardin_cookie:
+        mon_jardin = mon_jardin_cookie.split(",")
+    else:
+        mon_jardin = []
     col1, col2 = st.columns(2)
     with col2:
         st.markdown('<div class="centered-image">', unsafe_allow_html=True)
         st.image(f"{selected_plant['image_y']}", use_container_width=True)
         st.markdown("</div>", unsafe_allow_html=True)
-
+        if mon_jardin_cookie and selected_plant["Nom"] in mon_jardin:
+            st.markdown(
+                f"<p style='text-align: center; color: #57bb8a;'> {selected_plant['Nom']} est déjà dans votre jardin ! 🌱 </p>",
+                unsafe_allow_html=True,
+            )
+        elif st.button(
+            "Ajouter à mon jardin 👨‍🌾",
+            key=selected_plant["Nom"],
+            use_container_width=True,
+        ):
+            mon_jardin.append(selected_plant["Nom"])
+            mon_jardin = list(set(mon_jardin))
+            cookie_manager.set("mon_jardin", ",".join(mon_jardin))
+            st.success(
+                f"{selected_plant['Nom']} a été ajouté à votre jardin ! 🌱",
+                icon="✅",
+            )
     with col1:
         st.markdown(f"**Type** : *{selected_plant['Type']}*")
         if not pd.isna(selected_plant["Exposition"]):
-            st.markdown(f" **Exposition** : *{selected_plant["Exposition"]}*")
+            st.markdown(f" **Exposition** : *{selected_plant['Exposition']}*")
         st.markdown(f"**Rusticité** : *{selected_plant['Rusticité']}*")
         if not pd.isna(selected_plant["Profondeur"]):
             st.markdown(
@@ -200,6 +223,8 @@ if st.query_params.get("page") == "detail":
             </table>
             """
         st.markdown(html, unsafe_allow_html=True)
+
+
 st.markdown("<hr style='border: 1px solid #57bb8a;'>", unsafe_allow_html=True)
 ################
 

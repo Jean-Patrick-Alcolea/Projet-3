@@ -13,6 +13,13 @@ import helpers.visual_manager as visual_manager
 cookie_manager = CookieController()
 ville_cookie = cookie_manager.get("ville")
 
+if not ville_cookie:
+    st.title(
+        "Pour voir la météo, pense à sélectionner une ville dans la page d'accueil"
+    )
+    st.page_link("views/accueil.py", label="🏡 Accueil ↩")
+    st.stop()
+
 df = import_manager.get_df_cp()
 
 df_ville = df[df["commune"] == ville_cookie] if ville_cookie else None
