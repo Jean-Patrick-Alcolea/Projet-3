@@ -48,6 +48,18 @@ color: #57bb8a;
         .stMetric {
             text-align: center;
         }
+        .centered-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        
+        }
+        .stColumn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
 </style>
 """,
     unsafe_allow_html=True,
@@ -56,6 +68,7 @@ color: #57bb8a;
 if st.query_params.get("page") == "detail":
     id_plante = int(st.query_params.get("selected_plant"))
     selected_plant = df_plantes.loc[id_plante]
+    ############### TITRE ################
     st.html(
         f"""<h2 style='text-align: center; color: white;font-family: "Economica"' > {selected_plant["Nom"]} </h2> """
     )
@@ -69,13 +82,66 @@ if st.query_params.get("page") == "detail":
     besoin_eau = {
         "Moyen": "10 à 20 L/m²/semaine",
         "Faible": " 5 à 10 L/m²/semaine",
-        "Elevé": "20 à 40 L/m²/semaine",
+        "Élevé": "20 à 40 L/m²/semaine",
     }
 
     col1, col2 = st.columns(2)
-    with col1:
-        st.image(selected_plant["image_y"], width=500)
     with col2:
+        st.markdown('<div class="centered-image">', unsafe_allow_html=True)
+        st.image(f"{selected_plant['image_y']}", use_container_width=True)
+        st.markdown("</div>", unsafe_allow_html=True)
+        ##### CALENDRIER#####
+        mois = [
+            "jan",
+            "fév",
+            "mar",
+            "avr",
+            "mai",
+            "jui",
+            "juil",
+            "aoû",
+            "sep",
+            "oct",
+            "nov",
+            "déc",
+        ]
+        mois_complet = [
+            "janvier",
+            "février",
+            "mars",
+            "avril",
+            "mai",
+            "juin",
+            "juillet",
+            "août",
+            "septembre",
+            "octobre",
+            "novembre",
+            "décembre",
+        ]
+
+        def render_calendar(semis):
+            row = ""
+            for m in mois_complet:
+                if m in semis:
+                    row += f"<td style='background-color: #9ACD32; width: 25px; height: 20px;'></td>"
+                else:
+                    row += f"<td style='background-color: #eee; width: 25px; height: 20px;'></td>"
+            return row
+
+        semis = selected_plant["Calendrier_Semis"]
+        st.markdown(f"<strong>Périodes de semis :</strong>", unsafe_allow_html=True)
+
+        html = f"""
+            <table style='border-collapse: collapse;'>
+                <tr>{"".join([f"<th style='padding: 2px; font-size: 12px;'>{m.capitalize()}</th>" for m in mois])}</tr>
+                <tr>{render_calendar(semis)}</tr>
+            </table>
+            """
+        st.markdown(html, unsafe_allow_html=True)
+        st.markdown("---")
+        ################
+    with col1:
         st.markdown(f"**Type** : *{selected_plant['Type']}*")
         if not pd.isna(selected_plant["Exposition"]):
             st.markdown(f" **Exposition** : *{selected_plant["Exposition"]}*")
@@ -125,14 +191,19 @@ if st.query_params.get("page") == "detail":
 # par types de plantes
 
 type = st.multiselect(
-    "Filtrer par type de plantes", df_plantes["Type"].unique().tolist()
+    "Filtrer par type de plantes",
+    df_plantes["Type"].unique().tolist(),
+    placeholder="Filtre par type de plantes",
+    label_visibility="hidden",
 )
 
 if type:
     df_plantes = df_plantes[df_plantes["Type"].isin(type)]
 # barre de recherche
 search = st.text_input(
-    "Rechercher une plante par son nom", placeholder="Entrez le nom de la plante"
+    "Rechercher une plante par son nom",
+    placeholder="Entrez le nom de la plante",
+    label_visibility="hidden",
 )
 if search:
     df_plantes = df_plantes[
@@ -154,7 +225,12 @@ Mois = [
     "novembre",
     "décembre",
 ]
-reponse = st.multiselect("Mois de semis", Mois)
+reponse = st.multiselect(
+    "Mois de semis",
+    Mois,
+    placeholder="Filtre selon mois de semis",
+    label_visibility="hidden",
+)
 if reponse:
     df_plantes = df_plantes[
         df_plantes["Calendrier_Semis"].apply(lambda x: reponse in x)
@@ -176,6 +252,9 @@ total_pages = (len(df_plantes) - 1) // items_per_page + 1
 
 if "page_key" not in st.session_state:
     st.session_state["page_key"] = 1
+
+st.write("")
+st.write("")
 
 col1, col2, col3, col4, col5 = st.columns(5)
 with col1:
