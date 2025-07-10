@@ -14,7 +14,6 @@ def get_df_plantes():
 
 
 df_plantes = get_df_plantes()
-st.dataframe(df_plantes)
 
 
 st.markdown(
@@ -65,6 +64,15 @@ color: #57bb8a;
     unsafe_allow_html=True,
 )
 
+st.markdown(
+    f"""
+    <h1 style='text-align: center; color: #57bb8a;font-family: "Economica";'>
+        Trouve ta plante 🔎☘️
+    </h1>
+    """,
+    unsafe_allow_html=True,
+)
+
 if st.query_params.get("page") == "detail":
     id_plante = int(st.query_params.get("selected_plant"))
     selected_plant = df_plantes.loc[id_plante]
@@ -90,57 +98,7 @@ if st.query_params.get("page") == "detail":
         st.markdown('<div class="centered-image">', unsafe_allow_html=True)
         st.image(f"{selected_plant['image_y']}", use_container_width=True)
         st.markdown("</div>", unsafe_allow_html=True)
-        ##### CALENDRIER#####
-        mois = [
-            "jan",
-            "fév",
-            "mar",
-            "avr",
-            "mai",
-            "jui",
-            "juil",
-            "aoû",
-            "sep",
-            "oct",
-            "nov",
-            "déc",
-        ]
-        mois_complet = [
-            "janvier",
-            "février",
-            "mars",
-            "avril",
-            "mai",
-            "juin",
-            "juillet",
-            "août",
-            "septembre",
-            "octobre",
-            "novembre",
-            "décembre",
-        ]
 
-        def render_calendar(semis):
-            row = ""
-            for m in mois_complet:
-                if m in semis:
-                    row += f"<td style='background-color: #9ACD32; width: 25px; height: 20px;'></td>"
-                else:
-                    row += f"<td style='background-color: #eee; width: 25px; height: 20px;'></td>"
-            return row
-
-        semis = selected_plant["Calendrier_Semis"]
-        st.markdown(f"<strong>Périodes de semis :</strong>", unsafe_allow_html=True)
-
-        html = f"""
-            <table style='border-collapse: collapse;'>
-                <tr>{"".join([f"<th style='padding: 2px; font-size: 12px;'>{m.capitalize()}</th>" for m in mois])}</tr>
-                <tr>{render_calendar(semis)}</tr>
-            </table>
-            """
-        st.markdown(html, unsafe_allow_html=True)
-        st.markdown("---")
-        ################
     with col1:
         st.markdown(f"**Type** : *{selected_plant['Type']}*")
         if not pd.isna(selected_plant["Exposition"]):
@@ -177,14 +135,73 @@ if st.query_params.get("page") == "detail":
             st.markdown(
                 f"**Besoin en eau** : *{selected_plant['Besoin en eau']} ({besoin_eau[selected_plant['Besoin en eau']]})*"
             )
-        if not pd.isna(selected_plant["Calendrier des semis"]):
-            st.markdown(
-                f"**Calendrier des semis** : *{selected_plant['Calendrier des semis']}*"
-            )
-        if not pd.isna(selected_plant["Calendrier des récoltes"]):
-            st.markdown(
-                f"**Calendrier des récoltes** : *{selected_plant['Calendrier des récoltes']}*"
-            )
+    st.markdown("<hr style='border: 0.5px solid #57bb8a;'>", unsafe_allow_html=True)
+    col1, col2 = st.columns(2)
+    with col1:
+        ##### CALENDRIER#####
+        mois = [
+            "jan",
+            "fév",
+            "mar",
+            "avr",
+            "mai",
+            "jui",
+            "juil",
+            "aoû",
+            "sep",
+            "oct",
+            "nov",
+            "déc",
+        ]
+        mois_complet = [
+            "janvier",
+            "février",
+            "mars",
+            "avril",
+            "mai",
+            "juin",
+            "juillet",
+            "août",
+            "septembre",
+            "octobre",
+            "novembre",
+            "décembre",
+        ]
+
+        def render_calendar(semis):
+            row = ""
+            for m in mois_complet:
+                if m in semis:
+                    row += f"<td style='background-color: #57bb8a; width: 25px; height: 20px;'></td>"
+                else:
+                    row += f"<td style='background-color: #eee; width: 25px; height: 20px;'></td>"
+            return row
+
+        semis = selected_plant["Calendrier_Semis"]
+        st.markdown(f"<strong>Périodes de semis </strong>", unsafe_allow_html=True)
+
+        html = f"""
+            <table style='border-collapse: collapse;'>
+                <tr>{"".join([f"<th style='padding: 2px; font-size: 12px;'>{m.capitalize()}</th>" for m in mois])}</tr>
+                <tr>{render_calendar(semis)}</tr>
+            </table>
+            """
+        st.markdown(html, unsafe_allow_html=True)
+        st.write("")
+    with col2:
+        #### RECOLTE #####
+        recolte = selected_plant["Calendrier_Recolte"]
+        st.markdown(f"<strong>Périodes de récolte </strong>", unsafe_allow_html=True)
+
+        html = f"""
+            <table style='border-collapse: collapse;'>
+                <tr>{"".join([f"<th style='padding: 2px; font-size: 12px;'>{m.capitalize()}</th>" for m in mois])}</tr>
+                <tr>{render_calendar(recolte)}</tr>
+            </table>
+            """
+        st.markdown(html, unsafe_allow_html=True)
+st.markdown("<hr style='border: 1px solid #57bb8a;'>", unsafe_allow_html=True)
+################
 
 
 # insérer des filtres
