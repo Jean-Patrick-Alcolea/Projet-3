@@ -10,7 +10,7 @@ def get_df_cp():
     If the DataFrame is already in the session state, return it directly.
     """
     if "df" not in st.session_state:
-        df = pd.read_parquet("data/codes_postaux_final.gzip")
+        df = pd.read_parquet("data/df_departement_clean.gzip")
         st.session_state["df"] = df
     else:
         df = st.session_state["df"]

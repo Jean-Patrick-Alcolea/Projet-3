@@ -5,9 +5,7 @@ import pandas as pd
 
 def get_df_plantes():
     if "df_plantes" not in st.session_state:
-        df_plantes = pd.read_parquet(
-            "data/df_plantes_w_calendrier.gzip",
-        )
+        df_plantes = pd.read_parquet("data/df_plantes_clean.gzip")
         st.session_state["df_plantes"] = df_plantes
     else:
         df_plantes = st.session_state["df_plantes"]
@@ -275,16 +273,11 @@ reponse = st.multiselect(
 )
 if reponse:
     df_plantes = df_plantes[
-        df_plantes["Calendrier_Semis"].apply(lambda x: reponse in x)
+        df_plantes["Calendrier_Semis"].str.contains(
+            "|".join(reponse), case=False, na=False
+        )
     ]
 
-# recherche par mois de recolte
-# Mois = ["Tous","janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"]
-# reponse_recol = st.radio("Mois de récolte", Mois, horizontal=True)
-# if reponse_recol == "Tous":
-#  df_plantes = get_df_plantes()
-# else:
-#  df_plantes = df_plantes[df_plantes["Calendrier_Recolte"].apply(lambda x: reponse_recol in x)]
 
 # pagination
 
