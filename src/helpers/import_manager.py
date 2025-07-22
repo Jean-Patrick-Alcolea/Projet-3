@@ -23,7 +23,7 @@ def get_meteo_data(geopoint):
     Fetch weather data from the WeatherAPI based on the provided geopoint.
     """
     params = {
-        "key": "2fbbaab3e35841d5ba0125329251906",
+        "key": st.secrets["WEATHER_API_KEY"],
         "q": geopoint,
         "days": 3,
         "alerts": "yes",
@@ -44,7 +44,7 @@ def history_meteo(geopoint):
     Fetch historical weather data for the last 3 days from the WeatherAPI.
     """
     params = {
-        "key": "2fbbaab3e35841d5ba0125329251906",
+        "key": st.secrets["WEATHER_API_KEY"],
         "q": "Nantes",
         "dt": (datetime.date.today() - datetime.timedelta(days=4)).strftime("%Y-%m-%d"),
         "end_dt": (datetime.date.today() - datetime.timedelta(days=1)).strftime(
