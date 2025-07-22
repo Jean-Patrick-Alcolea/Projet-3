@@ -14,6 +14,8 @@ def get_df_plantes():
     return df_plantes
 
 
+current_view = "mon_jardin"
+
 df_plantes = get_df_plantes()
 df_ville = import_manager.get_df_cp()
 
@@ -263,8 +265,12 @@ items_per_page = 30
 
 total_pages = (len(df_mon_jardin) - 1) // items_per_page + 1
 
-if "page_key" not in st.session_state:
+
+if "last_view" not in st.session_state:
+    st.session_state["last_view"] = current_view
+elif st.session_state["last_view"] != current_view:
     st.session_state["page_key"] = 1
+    st.session_state["last_view"] = current_view
 
 st.write("")
 st.write("")

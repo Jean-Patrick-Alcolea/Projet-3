@@ -17,6 +17,8 @@ df_plantes = get_df_plantes()
 cookie_manager = CookieController()
 mon_jardin_cookie = cookie_manager.get("mon_jardin")
 
+current_view = "recherche"
+
 st.markdown(
     """
 <style>
@@ -285,8 +287,11 @@ items_per_page = 30
 
 total_pages = (len(df_plantes) - 1) // items_per_page + 1
 
-if "page_key" not in st.session_state:
+if "last_view" not in st.session_state:
+    st.session_state["last_view"] = current_view
+elif st.session_state["last_view"] != current_view:
     st.session_state["page_key"] = 1
+    st.session_state["last_view"] = current_view
 
 st.write("")
 st.write("")

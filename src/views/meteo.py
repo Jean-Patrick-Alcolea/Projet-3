@@ -283,10 +283,10 @@ st.plotly_chart(fig)
 # Affichage du total de pluie
 total_precipitation = import_manager.get_total_rain(data)
 st.write(
-    f"**Total de pluie estimé sur les 3 prochains jours : {total_precipitation} mm**"
+    f"**Total de pluie estimé sur les 3 prochains jours : {total_precipitation:.2f} mm**"
 )
 
 history_rain = import_manager.history_meteo(geopoint)
 history_rain = import_manager.get_total_rain(history_rain)
 
-st.write(f"**Total de pluie sur les 4 derniers jours : {history_rain} mm**")
+st.write(f"**Total de pluie sur les 4 derniers jours : {history_rain:.2f} mm**")

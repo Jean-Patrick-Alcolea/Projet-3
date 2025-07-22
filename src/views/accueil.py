@@ -47,9 +47,10 @@ CP = st.selectbox(
     label_visibility="hidden",
 )
 ville = None
+unique_villes = df[df["code_postal"] == CP]["commune"].unique()
 if CP:
     villes = df[df["code_postal"] == CP]
-    if len(villes) > 1:
+    if len(villes) > 1 and unique_villes.size > 1:
         ville = st.selectbox(
             options=villes["commune"],
             label="Sélectionne ta commune : ",

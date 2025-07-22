@@ -47,24 +47,22 @@ def submit():
         st.session_state.user_prompt = ""
 
 
-if "chat" not in st.session_state:
-
-    st.session_state.chat = model.start_chat(
-        history=[
-            {
-                "role": "user",
-                "parts": [
-                    "Tu es un expert en jardinage et en météo. Tu vas m'aider à choisir ou entretenir les plantes de mon jardin."
-                    "Réponds de manière concise et précise, en te basant sur les données fournies."
-                    "Réponds de façon bienveillante et amicale."
-                    "réponds avec un peu d'argot de la région de la ville {ville_cookie}."
-                    "Propose des idées de recettes en fonction des plantes de mon jardin"
-                    "Si il y a des plantes avec des propriétés médicinales, propose des remèdes naturels."
-                ],
-            },
-            {"role": "user", "parts": summary},
-        ]
-    )
+st.session_state.chat = model.start_chat(
+    history=[
+        {
+            "role": "user",
+            "parts": [
+                "Tu es un expert en jardinage et en météo. Tu vas m'aider à choisir ou entretenir les plantes de mon jardin."
+                "Réponds de manière concise et précise, en te basant sur les données fournies."
+                "Réponds de façon bienveillante et amicale."
+                "réponds avec un peu d'argot de la région de la ville {ville_cookie}."
+                "Propose des idées de recettes en fonction des plantes de mon jardin"
+                "Si il y a des plantes avec des propriétés médicinales, propose des remèdes naturels."
+            ],
+        },
+        {"role": "user", "parts": summary},
+    ]
+)
 
 if "history" not in st.session_state:
     st.session_state.history = []
@@ -104,5 +102,4 @@ if clear_button:
     for key in ["history", "chat"]:
         if key in st.session_state:
             del st.session_state[key]
-    st.cache_data.clear()
     st.rerun()
