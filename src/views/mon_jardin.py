@@ -29,6 +29,10 @@ data = import_manager.get_meteo_data(geopoint)
 total_rain = import_manager.get_total_rain(data)
 
 
+history_rain = import_manager.history_meteo(geopoint)
+history_rain = import_manager.get_total_rain(history_rain)
+total_rain += history_rain
+
 mon_jardin = mon_jardin_cookie.split(",") if mon_jardin_cookie else []
 
 df_mon_jardin = df_plantes[df_plantes["Nom"].isin(mon_jardin)]
@@ -105,10 +109,11 @@ if st.query_params.get("page") == "detail":
                 f"<p style='text-align: left; color: #57bb8a;'>Sol de votre ville : {sol_ville} </p>",
                 unsafe_allow_html=True,
             )
+
         if not pd.isna(selected_plant["Arrossage"]):
             if selected_plant["Arrossage"] > 0:
                 st.markdown(
-                    f"<p style='text-align: left; color: #57bb8a;'>Arrosage nécessaire : {int(selected_plant['Arrossage'])} L/m²</p>",
+                    f"<p style='text-align: left; color: #57bb8a;'>Au regard de l'historique et des prévisions météo pour cette semaine : </p>\n\n <p style='text-align: left; color: #57bb8a;'> Arrosage nécessaire : {int(selected_plant['Arrossage'])} L/m²</p>",
                     unsafe_allow_html=True,
                 )
             else:

@@ -10,9 +10,11 @@ jard = st.Page(page="views/mon_jardin.py", title="Mon jardin", icon="👨‍🌾
 
 meteo = st.Page(page="views/meteo.py", title="Météo", icon="🌈")
 
+chat = st.Page(page="views/chat.py", title="Chat", icon="💬")
+
 # **Navigation setup**
 
 
-pg = st.navigation(pages=[accueil, reche, jard, meteo])
+pg = st.navigation(pages=[accueil, reche, jard, meteo, chat])
 
 pg.run()

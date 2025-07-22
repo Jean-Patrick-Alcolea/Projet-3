@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import requests
 import pendulum
+import datetime
 
 
 def get_df_cp():
@@ -33,6 +34,28 @@ def get_meteo_data(geopoint):
 
     if response.status_code == 200:
         return response.json()
+    else:
+        st.error("Failed to fetch weather data.")
+        return None
+
+
+def history_meteo(geopoint):
+    """
+    Fetch historical weather data for the last 3 days from the WeatherAPI.
+    """
+    params = {
+        "key": "2fbbaab3e35841d5ba0125329251906",
+        "q": "Nantes",
+        "dt": (datetime.date.today() - datetime.timedelta(days=4)).strftime("%Y-%m-%d"),
+        "end_dt": (datetime.date.today() - datetime.timedelta(days=1)).strftime(
+            "%Y-%m-%d"
+        ),
+    }
+
+    url2 = "http://api.weatherapi.com/v1/history.json"
+    response2 = requests.get(url2, params=params)
+    if response2.status_code == 200:
+        return response2.json()
     else:
         st.error("Failed to fetch weather data.")
         return None
