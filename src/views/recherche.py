@@ -289,6 +289,7 @@ total_pages = (len(df_plantes) - 1) // items_per_page + 1
 
 if "last_view" not in st.session_state:
     st.session_state["last_view"] = current_view
+    st.session_state["page_key"] = 1
 elif st.session_state["last_view"] != current_view:
     st.session_state["page_key"] = 1
     st.session_state["last_view"] = current_view
