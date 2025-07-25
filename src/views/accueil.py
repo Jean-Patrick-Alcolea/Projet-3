@@ -64,7 +64,14 @@ col1, col2, col3 = st.columns(3)
 with col2:
     if ville:
         if st.button("Enregistre ta ville", use_container_width=True):
-            cookie_manager.set("ville", ville)
+            cookie_manager.set(
+                "ville",
+                ville,
+            )
+            cookie_manager.set(
+                "CP",
+                str(df[(df["code_postal"] == CP) & (df["commune"] == ville)].index[0]),
+            )
             st.success(f"Ville {ville} enregistrée avec succès !")
             time.sleep(1)
             st.rerun()

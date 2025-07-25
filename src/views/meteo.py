@@ -12,6 +12,7 @@ import helpers.visual_manager as visual_manager
 
 cookie_manager = CookieController()
 ville_cookie = cookie_manager.get("ville")
+cp_cookie = cookie_manager.get("CP")
 
 if not ville_cookie:
     st.title(
@@ -21,9 +22,8 @@ if not ville_cookie:
     st.stop()
 
 df = import_manager.get_df_cp()
-
-df_ville = df[df["commune"] == ville_cookie] if ville_cookie else None
-geopoint = df_ville.iloc[0][["geopoint"]].values if df_ville is not None else None
+df_ville = df.iloc[int(cp_cookie)] if cp_cookie else None
+geopoint = df_ville[["geopoint"]].values if df_ville is not None else None
 
 data = import_manager.get_meteo_data(geopoint)
 

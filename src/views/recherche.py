@@ -1,6 +1,8 @@
 import streamlit as st
 from streamlit_cookies_controller import CookieController
 import pandas as pd
+import helpers.import_manager as import_manager
+import random
 
 
 def get_df_plantes():
@@ -16,6 +18,20 @@ df_plantes = get_df_plantes()
 
 cookie_manager = CookieController()
 mon_jardin_cookie = cookie_manager.get("mon_jardin")
+
+cookie_manager = CookieController()
+ville_cookie = cookie_manager.get("ville")
+cp_cookie = cookie_manager.get("CP")
+
+df = import_manager.get_df_cp()
+
+df_ville = df.iloc[int(cp_cookie)] if cp_cookie else None
+
+df_reco = df_plantes[
+    (df_plantes["Sol requis"].str.contains(df_ville["Grands types de sols"]))
+    & df_plantes["Zone climatique idéale"].str.contains(df_ville["Zoneclimatique"])
+]
+
 
 current_view = "recherche"
 
@@ -76,6 +92,8 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
+
+# ******************detail****************
 if st.query_params.get("page") == "detail":
 
     id_plante = int(st.query_params.get("selected_plant"))
@@ -224,10 +242,78 @@ if st.query_params.get("page") == "detail":
             """
         st.markdown(html, unsafe_allow_html=True)
 
+    st.markdown("<hr style='border: 1px solid #57bb8a;'>", unsafe_allow_html=True)
 
+    st.write("**Plantes similaires**")
+    df_similar = df_plantes.iloc[selected_plant["Plantes similaires"]]
+    cols = st.columns(5)
+    for i in range(5):
+        with cols[i]:
+            st.image(df_similar.iloc[i]["image_y"], use_container_width=True)
+            if st.button(
+                df_similar.iloc[i]["Nom"],
+                key=f'{df_similar.iloc[i]["Nom"]}_reco',
+                use_container_width=True,
+            ):
+                st.query_params.update(
+                    {
+                        "page": "detail",
+                        "selected_plant": df_plantes[
+                            df_plantes["Nom"] == df_similar.iloc[i]["Nom"]
+                        ].index[0],
+                    }
+                )
+                st.rerun()
+            st.write("")
+            st.write("")
 st.markdown("<hr style='border: 1px solid #57bb8a;'>", unsafe_allow_html=True)
-################
 
+################
+# ****************reco plantes****************
+if st.query_params.get("page") != "detail":
+    st.write("**Plantes recommandées pour toi**")
+    if len(df_reco) < 5:
+        cols = st.columns(5)
+        for i in range(len(df_reco)):
+            with cols[i]:
+                st.image(df_reco.iloc[i]["image_y"], use_container_width=True)
+                if st.button(
+                    df_reco.iloc[i]["Nom"],
+                    key=f'{df_reco.iloc[i]["Nom"]}_reco',
+                    use_container_width=True,
+                ):
+                    st.query_params.update(
+                        {
+                            "page": "detail",
+                            "selected_plant": df_plantes[
+                                df_plantes["Nom"] == df_reco.iloc[i]["Nom"]
+                            ].index[0],
+                        }
+                    )
+                    st.rerun()
+                st.write("")
+                st.write("")
+    else:
+        cols = st.columns(5)
+        for i in range(5):
+            with cols[i]:
+                st.image(df_reco.iloc[i]["image_y"], use_container_width=True)
+                if st.button(
+                    df_reco.iloc[i]["Nom"],
+                    key=f'{df_reco.iloc[i]["Nom"]}_reco',
+                    use_container_width=True,
+                ):
+                    st.query_params.update(
+                        {
+                            "page": "detail",
+                            "selected_plant": df_plantes[
+                                df_plantes["Nom"] == df_reco.iloc[i]["Nom"]
+                            ].index[0],
+                        }
+                    )
+                    st.rerun()
+                st.write("")
+                st.write("")
 
 # insérer des filtres
 # par types de plantes
@@ -282,6 +368,7 @@ if reponse:
 
 
 # pagination
+
 
 items_per_page = 30
 

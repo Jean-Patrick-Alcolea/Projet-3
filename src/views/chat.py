@@ -24,9 +24,16 @@ df_ville = import_manager.get_df_cp()
 cookie_manager = CookieController()
 mon_jardin_cookie = cookie_manager.get("mon_jardin")
 ville_cookie = cookie_manager.get("ville")
+cp_cookie = cookie_manager.get("CP")
+if not ville_cookie:
+    st.title(
+        "Pour parler avec Pommtastique 🍏, pense à sélectionner une ville dans la page d'accueil"
+    )
+    st.page_link("views/accueil.py", label="🏡 Accueil ↩")
+    st.stop()
 # ***************************************
-df_ville = df_ville[df_ville["commune"] == ville_cookie] if ville_cookie else None
-geopoint = df_ville.iloc[0][["geopoint"]].values if df_ville is not None else None
+df_ville = df_ville.iloc[int(cp_cookie)] if cp_cookie else None
+geopoint = df_ville[["geopoint"]].values if df_ville is not None else None
 
 data = import_manager.get_meteo_data(geopoint)
 total_rain = import_manager.get_total_rain(data)
@@ -38,13 +45,7 @@ summary = [
 
 
 def submit():
-    user_input = st.session_state.user_prompt
-    if user_input:
-        # Ici tu appelles ton chatbot
-        response = st.session_state.chat.send_message(user_input)
-        st.session_state.history.append(("User", user_input))
-        st.session_state.history.append(("Pommtastique 🍏", response.text))
-        st.session_state.user_prompt = ""
+    st.session_state.submitted = True
 
 
 st.session_state.chat = model.start_chat(
@@ -80,22 +81,30 @@ st.write(
 
 
 # *******************Chat Interface******************
-user_input = st.text_input(
-    "Discute avec ton jardinier virtuel Pommtastique 🍏",
-    key="user_prompt",
-    on_change=submit,
-)
-if user_input:
-    response = st.session_state.chat.send_message(user_input)
-    st.session_state.history.append(("User", user_input))
-    st.session_state.history.append(("Pommtastique 🍏", response.text))
+with st.chat_message("user"):
+    user_input = st.text_input(
+        "Discute avec ton jardinier virtuel Pommtastique 🍏",
+        key="user_prompt",
+        on_change=submit,
+    )
+
+if st.session_state.get("user_prompt") and st.session_state.get("submitted", False):
+    prompt_to_process = st.session_state.user_prompt
+
+    response = st.session_state.chat.send_message(prompt_to_process)
+
+    # Enregistrer dans l'historique, mais ne pas réafficher ici
+    st.session_state.history.append(("user", prompt_to_process))
+    st.session_state.history.append(("assistant", response.text))
+
+    st.session_state.submitted = False
 
 
+# Rejoue l’historique
 for sender, message in st.session_state.history:
-    if sender == "User":
-        st.markdown(f"**Toi :** {message}")
-    else:
-        st.markdown(f"**Pommtastique 🍏 :** {message}")
+    with st.chat_message(sender):
+        st.write(message)
+
 
 clear_button = st.button("Effacer la conversation")
 if clear_button:

@@ -23,9 +23,16 @@ df_ville = import_manager.get_df_cp()
 cookie_manager = CookieController()
 mon_jardin_cookie = cookie_manager.get("mon_jardin")
 ville_cookie = cookie_manager.get("ville")
+cp_cookie = cookie_manager.get("CP")
+if not ville_cookie:
+    st.title(
+        "Pour voir ton jardin, pense à sélectionner une ville dans la page d'accueil"
+    )
+    st.page_link("views/accueil.py", label="🏡 Accueil ↩")
+    st.stop()
 # ***************************************
-df_ville = df_ville[df_ville["commune"] == ville_cookie] if ville_cookie else None
-geopoint = df_ville.iloc[0][["geopoint"]].values if df_ville is not None else None
+df_ville = df_ville.iloc[int(cp_cookie)] if cp_cookie else None
+geopoint = df_ville[["geopoint"]].values if df_ville is not None else None
 
 data = import_manager.get_meteo_data(geopoint)
 total_rain = import_manager.get_total_rain(data)
@@ -38,7 +45,7 @@ total_rain += history_rain
 mon_jardin = mon_jardin_cookie.split(",") if mon_jardin_cookie else []
 
 df_mon_jardin = df_plantes[df_plantes["Nom"].isin(mon_jardin)]
-sol_ville = df_ville.iloc[0]["Grands types de sols"]
+sol_ville = df_ville["Grands types de sols"]
 
 
 def arrosage(besoins_en_eau, sol, total_rain):
