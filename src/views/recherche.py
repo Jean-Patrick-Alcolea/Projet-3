@@ -28,8 +28,8 @@ df = import_manager.get_df_cp()
 df_ville = df.iloc[int(cp_cookie)] if cp_cookie else None
 
 df_reco = df_plantes[
-    (df_plantes["Sol requis"].str.contains(df_ville["Grands types de sols"]))
-    & df_plantes["Zone climatique idéale"].str.contains(df_ville["Zoneclimatique"])
+    (df_plantes["Sol requis"].isin(df_ville["Grands types de sols"].split(", ")))
+    & (df_plantes["Zone climatique idéale"].str.contains(df_ville["Zoneclimatique"]))
 ]
 
 
