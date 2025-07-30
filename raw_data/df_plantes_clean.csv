@@ -1,0 +1,85 @@
+Nom,Type,Exposition,Rusticité,Profondeur,Espacement,Temps_levée,Temperature,delai_recolte,image
+Aneth,Aromatiques,Soleil,Résistant au gel,0.5,20,20,18,,https://img.permapotes.com/cover-square/197d40a9004ed8099ecdb7d0e0cc8560.JPG
+Basilic,Aromatiques,Soleil,Non résistant au gel,0.5,20,8,18,90,https://img.permapotes.com/cover-square/8b9aa50964be93d482a444b496290247.jpg
+Cerfeuil,Aromatiques,Mi-ombre,Résistant au gel,0.5,10,10,10,50,https://img.permapotes.com/cover-square/67265ad45c172a64e08683b095b1f8f6.jpg
+Ciboulette,Aromatiques,Soleil,Résistant au gel,1.0,10,18,18,90,https://img.permapotes.com/cover-square/d0db40392cc2bafac3aab4ab97145764.JPG
+Coriandre,Aromatiques,Soleil,Non résistant au gel,1.0,15,15,15,60,https://img.permapotes.com/cover-square/7b61c4a869303e9cfdcb4e82a5f89e80.jpg
+Curcuma,Aromatiques,Mi-ombre,Résistant au gel,,,,,,https://img.permapotes.com/cover-square/f4123036ba7bb13a3705d9a70351e7c8.jpg
+Estragon,Aromatiques,Soleil,Résistant au gel,,20,,,,https://img.permapotes.com/cover-square/d0078ad205661f646753cae4b502f858.JPG
+Gingembre,Aromatiques,Soleil,Non résistant au gel,,,,,,https://img.permapotes.com/cover-square/e2eb001aca8ed8caf572cbf83feb97c1.jpg
+Menthe,Aromatiques,Mi-ombre,Résistant au gel,,,,,,https://img.permapotes.com/cover-square/2b346d67ad7537c05aad0477d46aec6d.jpg
+Origan,Aromatiques,Soleil,Résistant au gel,,30,,,,https://img.permapotes.com/cover-square/6cd5f91b083eb0a785a891d9399f8d03.jpg
+Persil,Aromatiques,Mi-ombre,Résistant au gel,0.5,10,21,18,90,https://img.permapotes.com/cover-square/83aa278fc0e98d8fd0a2dd32329e1d67.jpg
+Romarin,Aromatiques,Soleil,Résistant au gel,,40,,,,https://img.permapotes.com/cover-square/f8971a6b52320e62dd35bb1d31712ba4.jpg
+Sauge,Aromatiques,Soleil,Résistant au gel,,,,,,https://img.permapotes.com/cover-square/f19ca089f5cdc97e57651726bf0f48d8.jpg
+Thym,Aromatiques,Soleil,Résistant au gel,0.5,25,21,20,150,https://img.permapotes.com/cover-square/0f0e3a9dce42945c08234f31c9380e65.jpg
+Bourrache,Fleurs,Mi-ombre,Non résistant au gel,1.0,30,,,,https://img.permapotes.com/cover-square/d98623e2708bc9636b3e8e6a389a8c9b.jpg
+Camomille,Fleurs,Soleil,Non résistant au gel,1.0,25,15,15,,https://img.permapotes.com/cover-square/456fb6c63b23b4aa714422640b6015e8.jpg
+Oeillet d'Inde (tagette),Fleurs,Soleil,Non résistant au gel,,25,,,,https://img.permapotes.com/cover-square/a522b1862a9d72913ea23dbbd59c63d9.jpg
+Tournesol,Fleurs,Soleil,Non résistant au gel,3.0,40,,,140,https://img.permapotes.com/cover-square/90ff603e98b31b4e69190713ddea0766.jpg
+Cassissier,Fruitiers,Mi-ombre,Résistant au gel,,,,,,https://img.permapotes.com/cover-square/6b4df53b8e417f22633bd559b2ef7a71.jpg
+Cerisier,Fruitiers,Soleil,,,,,,,https://img.permapotes.com/cover-square/5fe43f9cd18782248fd446a2cff91c59.jpg
+Fraisier,Fruitiers,Soleil,Résistant au gel,,40,,,,https://img.permapotes.com/cover-square/e009b0d477d2ba6c04374e8fa249e7cd.jpg
+Framboisier,Fruitiers,Mi-ombre,Résistant au gel,,80,,,,https://img.permapotes.com/cover-square/cb22a9af5b184b3c83aab868718e6a2b.jpg
+Groseiller,Fruitiers,Mi-ombre,Résistant au gel,,,,,,https://img.permapotes.com/cover-square/2c73d19ebc25e2e78e8513c73c2533a7.jpg
+Kiwitier,Fruitiers,Soleil,Peu résistant au gel,,,,,,https://img.permapotes.com/cover-square/16555baa76e00fe064a22c48570c0517.jpg
+Melon,Fruitiers,Soleil,Non résistant au gel,1.5,80,8,15,150,https://img.permapotes.com/cover-square/886aee0b019d89e3609c2ccc2e518b39.jpg
+Myrtillier,Fruitiers,Mi-ombre,Résistant au gel,,,,,,https://img.permapotes.com/cover-square/fa6af989f948348f8dff4b05e1887d09.jpg
+Pastèque,Fruitiers,Soleil,Non résistant au gel,1.0,120,,20,,https://img.permapotes.com/cover-square/2d5023e9aa1b16ba69b52c9a75390c62.jpg
+Raisin (vigne),Fruitiers,Soleil,Résistant au gel,,100,,,,https://img.permapotes.com/cover-square/4d896909a464f3d72c720e9f3d81e19d.jpg
+Ail blanc,Légumes,Soleil,Résistant au gel,2.0,10,7,15,180,https://img.permapotes.com/cover-square/64031dc651616919b429a525478733f8.jpg
+Asperge,Légumes,Mi-ombre,Résistant au gel,1.0,8,25,15,730,https://img.permapotes.com/cover-square/3a9f37984f7a2836ec7637a9643e6d3c.jpg
+Aubergine,Légumes,Soleil,Non résistant au gel,0.5,60,7,18,150,https://img.permapotes.com/cover-square/37fdf5b11faad699032e2fc887a6723c.jpg
+Betterave,Légumes,Mi-ombre,Non résistant au gel,2.0,12,10,15,120,https://img.permapotes.com/cover-square/fdedf6ae2a645e8f56620b36e33f2651.jpg
+"Blette (bette, poirée)",Légumes,Mi-ombre,Résistant au gel,1.0,50,10,8,90,https://img.permapotes.com/cover-square/14741c1c206d2124786eedc56502c131.JPG
+Brocoli,Légumes,Soleil,Peu résistant au gel,1.0,50,10,10,75,https://img.permapotes.com/cover-square/99014f0867e6008fc656a36338c4c581.jpg
+Carotte,Légumes,Soleil,Résistant au gel,0.5,2,15,10,120,https://img.permapotes.com/cover-square/33de9adc5ae163988d31fbe365676b49.jpg
+Chicorée scarole / frisée,Légumes,Soleil,Résistant au gel,1.0,20,10,18,120,https://img.permapotes.com/cover-square/6dba424bc704c1fe8471e41ed0d2e1ae.jpg
+Chou Romanesco,Légumes,Soleil,Résistant au gel,1.0,70,5,12,100,https://img.permapotes.com/cover-square/b2b2d0a1b27b5024ead8dea2c11a3bfd.jpeg
+Chou cabus,Légumes,Soleil,Résistant au gel,1.0,60,6,12,150,https://img.permapotes.com/cover-square/dfd7d29c801f7a5e6a2f3388ced2ad53.jpg
+Chou de Bruxelles,Légumes,Soleil,Résistant au gel,1.0,50,6,10,180,https://img.permapotes.com/cover-square/de2c7cee53f67ebe1e3c353fb2c69481.jpg
+Chou fleur,Légumes,Soleil,Résistant au gel,1.0,70,5,12,150,https://img.permapotes.com/cover-square/14a655fc3df551bd1a548515e5320000.jpg
+Chou rave,Légumes,Soleil,Résistant au gel,0.5,20,8,12,150,https://img.permapotes.com/cover-square/13cd1e6fc8f194b72507893714d1de3e.jpg
+Citrouille,Légumes,Soleil,Non résistant au gel,2.0,120,8,15,150,https://img.permapotes.com/cover-square/ed5519da275d4ca97ffd9f5724503cd1.jpg
+Concombre,Légumes,Soleil,Non résistant au gel,2.0,60,8,15,90,https://img.permapotes.com/cover-square/97ffac91d570fda555e9c98758d00544.jpg
+Cornichon,Légumes,Soleil,Non résistant au gel,2.0,60,8,15,90,https://img.permapotes.com/cover-square/209241d67a72c1fc796a33dc45194095.jpg
+Courge,Légumes,Soleil,Non résistant au gel,2.0,120,8,15,150,https://img.permapotes.com/cover-square/8a30b5490ac56155f086b1fa61525f20.jpg
+Courgette verte,Légumes,Soleil,Non résistant au gel,2.0,100,8,15,70,https://img.permapotes.com/cover-square/1306a9ee5eb6dce617f1c894af3c0da4.JPG
+Cresson alénois,Légumes,Mi-ombre,Résistant au gel,0.5,15,4,15,80,https://img.permapotes.com/cover-square/b593f147bb678f8ce740933df5035491.jpeg
+Céleri branche,Légumes,Soleil,Résistant au gel,0.5,30,18,15,210,https://img.permapotes.com/cover-square/c5466b06a271be47fc2d515a4303e599.jpg
+Céleri rave,Légumes,Soleil,Résistant au gel,0.5,30,18,15,210,https://img.permapotes.com/cover-square/25a003dac7bdeb958ee48043a1e32fdb.jpg
+Echalote,Légumes,Soleil,Résistant au gel,1.0,10,,,180,https://img.permapotes.com/cover-square/0dea85d51eb351837ee3f2f99ab13a52.jpg
+Endive (chicon),Légumes,Soleil,Résistant au gel,1.0,30,10,18,180,https://img.permapotes.com/cover-square/b789a0bf4336181ae6aef660d37f43e7.jpg
+Epinard,Légumes,Mi-ombre,Résistant au gel,1.0,10,10,10,60,https://img.permapotes.com/cover-square/fd57bb4047580be2863233a40085ab8c.jpg
+Fenouil,Légumes,Soleil,Résistant au gel,1.0,15,10,15,90,https://img.permapotes.com/cover-square/4426258e97bd182f36fd2675ee6531c4.jpg
+Fève,Légumes,Soleil,Résistant au gel,3.0,10,10,15,80,https://img.permapotes.com/cover-square/cb58553b7158a84da8fc8d363601f525.JPG
+Haricots beurre,Légumes,Soleil,Non résistant au gel,3.0,5,8,15,90,https://img.permapotes.com/cover-square/df5b980f0311cd7b15d49fba95aaacfc.jpg
+Haricots blancs (flageolets),Légumes,Soleil,Non résistant au gel,3.0,10,8,15,120,https://img.permapotes.com/cover-square/b37ae2f7b9187851077d8801d4864abb.jpeg
+Haricots rouges,Légumes,Soleil,Non résistant au gel,3.0,10,8,15,90,https://img.permapotes.com/cover-square/17c6c0f9be30c0f2c8384bac3d8a1be3.jpg
+Haricots verts,Légumes,Soleil,Non résistant au gel,3.0,5,8,15,90,https://img.permapotes.com/cover-square/d261d8de19087b226f9d988177346da8.jpeg
+Laitue (salade),Légumes,Soleil,Résistant au gel,0.5,25,10,12,75,https://img.permapotes.com/cover-square/3bae90e1bee5a6dae79fb9896b5bceea.jpeg
+Lentille,Légumes,Soleil,Résistant au gel,1.0,4,15,8,100,https://img.permapotes.com/cover-square/b10d598b25ee0fcf1a6f1986d0471ba1.jpg
+Mache,Légumes,Mi-ombre,Résistant au gel,0.5,8,10,18,90,https://img.permapotes.com/cover-square/6636a199866c3a1ad915cf5ba4917cb2.jpg
+Maïs,Légumes,Soleil,Non résistant au gel,2.0,15,8,18,120,https://img.permapotes.com/cover-square/689fdde2033cce901adcd05db7c87bfa.jpg
+Navet,Légumes,Soleil,Résistant au gel,0.5,10,6,15,90,https://img.permapotes.com/cover-square/94467ee770ba1b5d2525e644775b6fb8.jpeg
+Panais,Légumes,Soleil,Résistant au gel,1.0,10,28,18,180,https://img.permapotes.com/cover-square/2782291f2e20b1a317a8b74d3a096502.jpg
+Petit pois,Légumes,Soleil,Non résistant au gel,2.0,4,20,12,120,https://img.permapotes.com/cover-square/62da3bb22493aabbd096c46c1fdf0c4d.jpg
+Physalis,Légumes,Soleil,Non résistant au gel,1.0,60,,,150,https://img.permapotes.com/cover-square/d2d42cb99342991039c4ea8009446417.jpg
+Piment,Légumes,Soleil,Non résistant au gel,0.5,50,15,15,150,https://img.permapotes.com/cover-square/aa9aaacf4426f392a65fe9d476301693.jpg
+Poireau d'hiver,Légumes,Soleil,Résistant au gel,1.0,10,15,12,180,https://img.permapotes.com/cover-square/bfe597e23354868bfee05264b1806ef4.jpg
+Poireau d'été,Légumes,Soleil,Résistant au gel,1.0,10,15,12,180,https://img.permapotes.com/cover-square/d1c6b3769e05886410d09ee1262c5f59.jpg
+Pois mangetout,Légumes,Soleil,Non résistant au gel,2.0,4,20,12,120,https://img.permapotes.com/cover-square/84c4065b0cc2dbdee03b72c9bc89fdcb.jpg
+Poivron,Légumes,Soleil,Non résistant au gel,0.5,50,15,15,150,https://img.permapotes.com/cover-square/48eeb49a4a89203c21846d7a25be022d.jpg
+Potimarron,Légumes,Soleil,Non résistant au gel,2.0,120,8,15,150,https://img.permapotes.com/cover-square/47f55718d89e8ca410ef767a498ccd3c.jpg
+Potiron,Légumes,Soleil,Non résistant au gel,2.0,120,8,15,150,https://img.permapotes.com/cover-square/370973fe545b373c09762f20ccb3db4c.jpg
+Radis noir (d'hiver),Légumes,Soleil,Non résistant au gel,0.5,8,5,8,150,https://img.permapotes.com/cover-square/b45d630908be4f5b465893aadff971ac.jpg
+Radis rouge,Légumes,Mi-ombre,Résistant au gel,0.5,8,5,8,40,https://img.permapotes.com/cover-square/58676540ff0c998ef2b59bcb4a106293.jpg
+Salsifi (Scorsonère),Légumes,Soleil,Résistant au gel,1.0,10,15,15,150,https://img.permapotes.com/cover-square/8b1faa8edc95d0acc4d8d9f7bc98c688.jpg
+Tomate,Légumes,Soleil,Non résistant au gel,1.0,60,8,15,120,https://img.permapotes.com/cover-square/86d2686f68972480ed7183139ae91723.jpg
+Tomates cerises,Légumes,Soleil,Non résistant au gel,1.0,60,8,15,100,https://img.permapotes.com/cover-square/38c37045978710b5e77d6c9f62ed86c2.jpg
+Topinambour,Légumes,Soleil,Résistant au gel,8.0,40,,,210,https://img.permapotes.com/cover-square/d292b5845ed3fabf77dc49397e7ddbf5.jpg
+Ail des ours,Légumes perpétuels,Ombre,,,15,,,,https://img.permapotes.com/cover-square/c46ef2ef30c9c60c3254bfa6fa5d8f55.jpg
+Artichaut,Légumes perpétuels,Soleil,Résistant au gel,4.0,80,20,15,120,https://img.permapotes.com/cover-square/f69fa98b10999ed66e9ee6f8a15075c7.jpg
+Cardon,Légumes perpétuels,Soleil,Résistant au gel,,,,,,https://img.permapotes.com/cover-square/c654025d2beed2ca63229f8cb2673fdd.jpg
+Poireau perpétuel,Légumes perpétuels,Soleil,Résistant au gel,,15,,,,https://img.permapotes.com/cover-square/a9609a4157fe18de89673ca2d3aa6319.jpg
+Rhubarbe,Légumes perpétuels,Mi-ombre,Résistant au gel,,100,,,,https://img.permapotes.com/cover-square/3be940334ab4ff0f3bcffbb5bd2e3c57.jpeg

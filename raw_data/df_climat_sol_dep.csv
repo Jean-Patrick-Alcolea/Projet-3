@@ -1,0 +1,97 @@
+Numéro,Département,Région,Types de sols dominants,Grands types de sols,Climat
+01,Ain,Auvergne-Rhône-Alpes,Sols argileux et calcaires,"Argileux, Limoneux",H2
+02,Aisne,Hauts-de-France,Limons éoliens,Limoneux,H1
+03,Allier,Auvergne-Rhône-Alpes,"Schistes, marnes",Argileux,H2
+04,Alpes-de-Haute-Provence,Provence-Alpes-Côte d'Azur,Schistes,Argileux,H3
+05,Hautes-Alpes,Provence-Alpes-Côte d'Azur,Schistes,Argileux,H3
+06,Alpes-Maritimes,Provence-Alpes-Côte d'Azur,Schistes,Argileux,H3
+07,Ardèche,Auvergne-Rhône-Alpes,"Schistes, basaltes",Argileux,H2
+08,Ardennes,Grand Est,Marnes,Argileux,H1
+09,Ariège,Occitanie,Calcaires durs,Limoneux,H2
+10,Aube,Grand Est,Craies,Limoneux,H1
+11,Aude,Occitanie,Calcaires durs,Limoneux,H2
+12,Aveyron,Occitanie,Calcaires durs,Limoneux,H2
+13,Bouches-du-Rhône,Provence-Alpes-Côte d'Azur,Alluvions fluviatiles,Limoneux,H3
+14,Calvados,Normandie,Limons éoliens,Limoneux,H1
+15,Cantal,Auvergne-Rhône-Alpes,"Schistes, basaltes",Argileux,H2
+16,Charente,Nouvelle-Aquitaine,Calcaires durs,Limoneux,H2
+17,Charente-Maritime,Nouvelle-Aquitaine,Alluvions fluviatiles,"Limoneux, Sableux",H2
+18,Cher,Centre-Val de Loire,Limons éoliens,Limoneux,H1
+19,Corrèze,Nouvelle-Aquitaine,Schistes,Argileux,H2
+20,Corse-du-Sud,Corse,Sols granitiques,Sableux,H3
+20,Haute-Corse,Corse,Sols granitiques,Sableux,H3
+21,Côte-d'Or,Bourgogne-Franche-Comté,Marnes,Argileux,H1
+22,Côtes-d'Armor,Bretagne,"Granites, schistes","Argileux, Sableux",H1
+23,Creuse,Nouvelle-Aquitaine,Granites,Sableux,H2
+24,Dordogne,Nouvelle-Aquitaine,Calcaires durs,Limoneux,H2
+25,Doubs,Bourgogne-Franche-Comté,Marnes,Argileux,H1
+26,Drôme,Auvergne-Rhône-Alpes,Schistes,Argileux,H2
+27,Eure,Normandie,Limons éoliens,Limoneux,H1
+28,Eure-et-Loir,Centre-Val de Loire,Limons éoliens,Limoneux,H1
+29,Finistère,Bretagne,"Granites, schistes","Argileux, Sableux",H1
+30,Gard,Occitanie,Calcaires durs,Limoneux,H2
+31,Haute-Garonne,Occitanie,Limons éoliens,Limoneux,H2
+32,Gers,Occitanie,Limons éoliens,Limoneux,H2
+33,Gironde,Nouvelle-Aquitaine,Alluvions fluviatiles,"Limoneux, Sableux",H2
+34,Hérault,Occitanie,Calcaires durs,Limoneux,H3
+35,Ille-et-Vilaine,Bretagne,"Granites, schistes","Argileux, Sableux",H1
+36,Indre,Centre-Val de Loire,Limons éoliens,Limoneux,H1
+37,Indre-et-Loire,Centre-Val de Loire,Limons éoliens,Limoneux,H1
+38,Isère,Auvergne-Rhône-Alpes,Schistes,Argileux,H2
+39,Jura,Bourgogne-Franche-Comté,Marnes,Argileux,H1
+40,Landes,Nouvelle-Aquitaine,Sols sableux,Sableux,H2
+41,Loir-et-Cher,Centre-Val de Loire,Sols sableux,Sableux,H1
+42,Loire,Auvergne-Rhône-Alpes,Schistes,Argileux,H2
+43,Haute-Loire,Auvergne-Rhône-Alpes,Basaltes,Argileux,H2
+44,Loire-Atlantique,Pays de la Loire,Schistes,Argileux,H1
+45,Loiret,Centre-Val de Loire,Limons éoliens,Limoneux,H1
+46,Lot,Occitanie,Calcaires durs,Limoneux,H2
+47,Lot-et-Garonne,Nouvelle-Aquitaine,Limons éoliens,Limoneux,H2
+48,Lozère,Occitanie,Schistes,Argileux,H2
+49,Maine-et-Loire,Pays de la Loire,Schistes,Argileux,H1
+50,Manche,Normandie,Schistes,Argileux,H1
+51,Marne,Grand Est,Craies,Limoneux,H1
+52,Haute-Marne,Grand Est,Marnes,Argileux,H1
+53,Mayenne,Pays de la Loire,Schistes,Argileux,H1
+54,Meurthe-et-Moselle,Grand Est,Marnes,Argileux,H1
+55,Meuse,Grand Est,Marnes,Argileux,H1
+56,Morbihan,Bretagne,"Granites, schistes","Argileux, Sableux",H1
+57,Moselle,Grand Est,Marnes,Argileux,H1
+58,Nièvre,Bourgogne-Franche-Comté,Marnes,Argileux,H1
+59,Nord,Hauts-de-France,Limons éoliens,Limoneux,H1
+60,Oise,Hauts-de-France,Limons éoliens,Limoneux,H1
+61,Orne,Normandie,Schistes,Argileux,H1
+62,Pas-de-Calais,Hauts-de-France,Limons éoliens,Limoneux,H1
+63,Puy-de-Dôme,Auvergne-Rhône-Alpes,"Schistes, marnes",Argileux,H2
+64,Pyrénées-Atlantiques,Nouvelle-Aquitaine,Schistes,Argileux,H2
+65,Hautes-Pyrénées,Occitanie,Calcaires durs,Limoneux,H2
+66,Pyrénées-Orientales,Occitanie,Schistes,Argileux,H3
+67,Bas-Rhin,Grand Est,Limons éoliens,Limoneux,H1
+68,Haut-Rhin,Grand Est,Limons éoliens,Limoneux,H1
+69,Rhône,Auvergne-Rhône-Alpes,Schistes,Argileux,H2
+70,Haute-Saône,Bourgogne-Franche-Comté,Marnes,Argileux,H1
+71,Saône-et-Loire,Bourgogne-Franche-Comté,Marnes,Argileux,H1
+72,Sarthe,Pays de la Loire,Schistes,Argileux,H1
+73,Savoie,Auvergne-Rhône-Alpes,Schistes,Argileux,H2
+74,Haute-Savoie,Auvergne-Rhône-Alpes,Schistes,Argileux,H2
+75,Paris,Île-de-France,Limons éoliens,Limoneux,H1
+76,Seine-Maritime,Normandie,Sols argileux,Argileux,H1
+77,Seine-et-Marne,Île-de-France,Sols argileux,Argileux,H1
+78,Yvelines,Île-de-France,Limons éoliens,Limoneux,H1
+79,Deux-Sèvres,Nouvelle-Aquitaine,Alluvions fluviatiles,Limoneux,H2
+80,Somme,Hauts-de-France,Limons éoliens,Limoneux,H1
+81,Tarn,Occitanie,Calcaires durs,Limoneux,H2
+82,Tarn-et-Garonne,Occitanie,Limons éoliens,Limoneux,H2
+83,Var,Provence-Alpes-Côte d'Azur,Schistes,Argileux,H3
+84,Vaucluse,Provence-Alpes-Côte d'Azur,Calcaires durs,Limoneux,H3
+85,Vendée,Pays de la Loire,Alluvions fluviatiles,"Limoneux, Sableux",H1
+86,Vienne,Nouvelle-Aquitaine,Calcaires durs,Limoneux,H2
+87,Haute-Vienne,Nouvelle-Aquitaine,Granites,Sableux,H2
+88,Vosges,Grand Est,Granites,Sableux,H1
+89,Yonne,Bourgogne-Franche-Comté,Marnes,Argileux,H1
+90,Territoire de Belfort,Bourgogne-Franche-Comté,Marnes,Argileux,H1
+91,Essonne,Île-de-France,Limons éoliens,Limoneux,H1
+92,Hauts-de-Seine,Île-de-France,Limons éoliens,Limoneux,H1
+93,Seine-Saint-Denis,Île-de-France,Limons éoliens,Limoneux,H1
+94,Val-de-Marne,Île-de-France,Limons éoliens,Limoneux,H1
+95,Val-d'Oise,Île-de-France,Limons éoliens,Limoneux,H1
