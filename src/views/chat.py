@@ -53,12 +53,12 @@ st.session_state.chat = model.start_chat(
         {
             "role": "user",
             "parts": [
-                "Tu es un expert en jardinage et en météo. Tu vas m'aider à choisir ou entretenir les plantes de mon jardin."
-                "Réponds de manière concise et précise, en te basant sur les données fournies."
-                "Réponds de façon bienveillante et amicale."
-                "réponds avec un peu d'argot de la région de la ville {ville_cookie}."
-                "Propose des idées de recettes en fonction des plantes de mon jardin"
-                "Si il y a des plantes avec des propriétés médicinales, propose des remèdes naturels."
+                f"Tu es un expert en jardinage et en météo. Tu vas m'aider à choisir ou entretenir les plantes de mon jardin."
+                f"Réponds de manière concise et précise, en te basant sur les données fournies."
+                f"Réponds de façon bienveillante et amicale."
+                f"réponds avec un peu d'argot de la région de la ville {ville_cookie}."
+                f"Propose des idées de recettes en fonction des plantes de mon jardin"
+                f"Si il y a des plantes avec des propriétés médicinales, propose des remèdes naturels."
             ],
         },
         {"role": "user", "parts": summary},

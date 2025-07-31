@@ -26,7 +26,12 @@ cp_cookie = cookie_manager.get("CP")
 df = import_manager.get_df_cp()
 
 df_ville = df.iloc[int(cp_cookie)] if cp_cookie else None
-
+if not ville_cookie:
+    st.title(
+        "Pour faire une recherche, pense à sélectionner une ville dans la page d'accueil"
+    )
+    st.page_link("views/accueil.py", label="🏡 Accueil ↩")
+    st.stop()
 df_reco = df_plantes[
     (df_plantes["Sol requis"].isin(df_ville["Grands types de sols"].split(", ")))
     & (df_plantes["Zone climatique idéale"].str.contains(df_ville["Zoneclimatique"]))
